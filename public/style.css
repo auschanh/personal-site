@@ -1,0 +1,20 @@
+html, body { 
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto
+}
+
+h6 {
+    padding: 10px 10px;
+}
+
+
+
