@@ -16,3 +16,7 @@ h1 {
 .picture {
     padding: 15px; 
 }
+
+.section-desc {
+  @apply text-3xl;
+}
