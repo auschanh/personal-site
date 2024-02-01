@@ -17,12 +17,19 @@ h2 {
   @apply text-xl;
 }
   
-  .hero {
+.hero {
     grid-row-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
-  
-.picture {
-    padding: 15px; 
+  .hero-left {
+    display: flex;
+  }
 }
 
 .section {

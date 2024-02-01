@@ -11,8 +11,5 @@
   "license": "ISC",
   "devDependencies": {
     "daisyui": "^4.6.1"
-  },
-  "dependencies": {
-    "tw-elements": "^1.1.0"
   }
 }
