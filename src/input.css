@@ -5,10 +5,16 @@
 /* Custom CSS */
 
 h1 {
+  @apply decoration-pink-700/85 underline decoration-2 underline-offset-4;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: bold;
-  }
+    
+}
+
+h2 {
+  @apply text-xl;
+}
   
   .hero {
     grid-row-gap: 20px;
@@ -20,4 +26,8 @@ h1 {
 
 .section-desc {
   @apply text-xl;
+}
+
+#small-text {
+  font-size: 1rem;
 }
