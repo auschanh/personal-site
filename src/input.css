@@ -6,9 +6,10 @@
 
 h1 {
   @apply decoration-pink-700/85 underline decoration-2 underline-offset-4;
-    font-size: 1.5rem;
+  @apply text-2xl font-bold;
+    /* font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: bold;
+    font-weight: bold; */
     
 }
 
@@ -22,6 +23,10 @@ h2 {
   
 .picture {
     padding: 15px; 
+}
+
+.section {
+  @apply lg:mx-64;
 }
 
 .section-desc {
