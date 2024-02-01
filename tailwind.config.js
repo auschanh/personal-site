@@ -10,6 +10,7 @@ module.exports = {
       padding: "2rem"
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tw-elements/dist/plugin.cjs")],
+  
 }
 
