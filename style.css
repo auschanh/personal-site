@@ -1373,16 +1373,16 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-64 {
+  margin-top: 16rem;
 }
 
 .flex {
@@ -1449,8 +1449,8 @@ details.collapse summary::-webkit-details-marker {
   border-radius: 1rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -1594,7 +1594,7 @@ h2 {
   grid-row-gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hero {
     flex-wrap: wrap;
     display: flex;
@@ -1612,8 +1612,8 @@ h2 {
 
 @media (min-width: 1024px) {
   .section {
-    margin-left: 16rem;
-    margin-right: 16rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
   }
 }
 

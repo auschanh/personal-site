@@ -21,7 +21,7 @@ h2 {
     grid-row-gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hero {
     flex-wrap: wrap;
     display: flex;
@@ -34,7 +34,7 @@ h2 {
 
 .section {
   /* temporary centered content */
-  @apply lg:mx-64;
+  @apply lg:mx-36;
 }
 
 .section-desc {
