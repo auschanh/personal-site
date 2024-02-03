@@ -13,35 +13,39 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
-    <nav class="z-10 fixed top-0 flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 shadow-lg focus:text-neutral-700 lg:py-4 lg:flex-wrap lg:justify-start">
+    <nav class="z-10 bg-white bg-opacity-95 shadow-lg fixed top-0 flex w-full flex-wrap items-center justify-between py-2  focus:text-neutral-700 lg:py-4 lg:flex-wrap lg:justify-start">
         <div class="flex w-full flex-wrap items-center justify-between px-3 my-0">
             
             <button type="button" class="text-gray-900 ml-3 rounded-full bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"><i class="fa-regular fa-moon"></i>  Dark</button>
-        <div class="middle-nav items-center justify-between">
+        <div class="middle-nav items-center justify-between text-xl font-bold">
             <ul class="list-style-none flex flex-col pl-0 lg:flex-row">
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a>About</a>
+                    <a href="#about" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4">
+                        About</a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a>Work</a>
+                    <a href="#work" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4">
+                        Work</a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    Projects
+                    <a href="#projects" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4">
+                        Projects</a>
                 </li>
             </ul>
         </div>
         <div class="right-nav items-center justify-between">
-            <ul class="list-style-none flex flex-col pl-0 lg:flex-row">
+            <ul class="list-style-none flex flex-col pl-0 lg:flex-row text-xl">
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <i class="fa-solid fa-file">RESUME</i>
+                    <a href="assets/Resume2023.pdf"><i class="fa-solid fa-file"> RESUME</i></a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/auschanh"><i class="fa-brands fa-github"></i></a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/auschanh"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
-                <li><i class="fa-brands fa-square-instagram"></i>
+                <li>
+                    <a href="https://instagram.com/auschanh"><i class="fa-brands fa-square-instagram"></i></a>
                 </li>
             </ul>
         </div>
@@ -66,7 +70,7 @@
         <br>
         <br>
     
-        <div class="section about row-span-1">
+        <div id="about" class="mt-10 section about row-span-1">
             <h1> About </h1><br>
             <div class="section-desc">
                 <p> Initially into a health related career path, I've always had an interest in programming
@@ -83,7 +87,7 @@
         <br>
         <br>
     
-        <div class="section work row-span-1 justify-items-center">
+        <div id="work" class="section work row-span-1 justify-items-center">
             <h1>Work Experiences</h1><br><br>
             <div class="section-desc">
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300">
@@ -95,7 +99,7 @@
                         <div class="ml-3">
                             
                             <p class="text-pink-700 font-extrabold text-sm">May 2021-Aug 2022 (1yrs 4mos)</p>
-                            <p class="">Ontario Ministry of Children and Community Services | CYSSC</p>
+                            <p class="font-extrabold">Ontario Ministry of Children and Community Services | CYSSC</p>
                             <p class="text-sm font-bold">PROGRAMMER</p>
                         </div>
                     </div>
@@ -103,37 +107,62 @@
                         <p class="text-teal-700 font-extrabold">Responsbilities</p>
                         <ul class="job-desc text-base list-disc ml-3">
                             
-                            <li>Created and maintained SharePoint sites based on client tickets and requirements</li>
-                            <li>Automated tasks with Power Automate to track files, populate lists/tables, email and notify clients</li>
-                            <li>Utilized ReactJS and SharePoint Framework (SPFx) to uniquely customize and develop client SharePoint site</li>
+                            <li class="my-2">Created and maintained <strong>SharePoint</strong> sites based on client tickets and requirements</li>
+                            <li class="my-2">Automated tasks with <strong>Power Automate</strong> to track files, populate lists/tables, email and notify clients</li>
+                            <li class="my-2">Utilized <strong>ReactJS</strong> and <strong>SharePoint Framework (SPFx)</strong> to uniquely customize and develop client <strong>SharePoint site</strong></li>
                         </ul>
+                        <br>
                         <p class="text-teal-700 font-extrabold font-xl mt-3">Highlights</p>
-                        <p class="text-base"> ▶ Selected as a speaker for CYSSC Learning and Engagement Conference among multiple co-op students
+                        <p class="text-base my-2"> ▶ <strong>Selected as a speaker for CYSSC Learning and Engagement Conference</strong> among multiple co-op students
                             - spoke about solo project on building a Sharepoint site and workflow for client, dramatically reducing time to populate, sort and filter data from applicants.
                         </p>
-                        <p class="text-base"> ▶ Developed a workflow that automated ticket requests from clients onto team task list, removing manual insertion of data and significatly improving request to assigned ticket times. 
+                        <p class="text-base"> ▶ Developed a workflow that automated ticket requests from clients onto team task list, removing manual insertion of data and significantly improving request to assigned ticket times. 
                             Workflow involved emailing clients, assigning priority and inserting into ticket list.
                         </p>
                         <!-- <p class="text-sm mt-2 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, ReactJS, Typescript, SQL</p> -->
                     </div> 
                 </div>
                 <p class="ml-3 text-sm mt-2 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, ReactJS, Typescript, SQL</p>
-            <br><br>
+                <div>
+                    <svg></svg>
+                </div> 
+                <br><br>
             </div>
                 <br>
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300">
                     <input type="checkbox" /> 
-                    <div class="collapse-title text-xl font-medium" id="small-text">
-                        Other Experiences
+                    <div class="collapse-title text-xl font-bold" id="small-text">
+                        Other Experiences (Retail)
                     </div>
                     <div class="collapse-content">
-                        <p class="text-pink-700 font-extrabold text-sm">Jul 2016-April 2021 (4yrs 8mos)</p>
-                        <p class="text-xl">Longos Corporation (Retail)</p>
-                        <p class="text-sm font-bold">DAIRY CLERK</p>
-                        <p class="job-desc text-base">
-                            Daily tasks included: solo closing the department on closing days, stocking inventory and 
-                            assisting customers. A lot of my interpersonal skills were developed here, such as <span class="font-bold">teamwork</span>, <span class="font-bold">intiative</span>, and <span class="font-bold">customer service</span>.
-                        </p>
+                        <div class="starbucks">
+                            <p class="text-pink-700 font-extrabold text-sm">Oct 2023-Present</p>
+                            <p class="text-xl font-extrabold">Starbucks (Retail)</p>
+                            <p class="text-sm font-bold">BARISTA</p>
+                            <p>
+                                Tasks include: daily cleaning of tools, carefully crafting customized drinks, restocking inventory.
+                            </p>
+                        </div>
+                        <br><br>
+                        <div class="longos">
+                            <p class="text-pink-700 font-extrabold text-sm">Jul 2016-April 2021 (4yrs 8mos)</p>
+                            <p class="text-xl font-extrabold">Longos Corporation (Retail)</p>
+                            <p class="text-sm font-bold">DAIRY CLERK</p>
+                            <p class="job-desc text-base">
+                                Daily tasks included: solo closing the department on closing days, stocking inventory and 
+                                assisting customers. A lot of my interpersonal skills were developed here, such as <span class="font-bold">teamwork</span>, <span class="font-bold">intiative</span>, and <span class="font-bold">customer service</span>.
+                            </p>
+                        </div>
+                        <br><br>
+                        <div class="shoppers">
+                            <p class="text-pink-700 font-extrabold text-sm">Nov 2014-Feb 2015</p>
+                            <p class="text-xl font-extrabold">Shoppers Drug Mart (Retail)</p>
+                            <p class="text-sm font-bold">Assistant Pharmacist and Cashier</p>
+                            <p>
+                                Stocked inventory of medicines and drugs, filled customer prescriptions with precise instructions (weighing, removing, adding etc) and organized files.
+                            </p>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -154,7 +183,7 @@
         <br>
         <br>
         
-        <div class="section projects row-span-1">
+        <div id="projects" class="section projects row-span-1">
             <h1>Projects</h1><br>
             <div class="section-desc">
                 <ol>
