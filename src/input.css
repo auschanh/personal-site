@@ -53,3 +53,7 @@ h2 {
 #small-text {
   font-size: 1rem;
 }
+
+.blackjack-pic, .bookreview-pic {
+  height: 23rem;
+}
