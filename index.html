@@ -39,13 +39,13 @@
                     <a href="assets/Resume2023.pdf"><i class="fa-solid fa-file"> RESUME</i></a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="https://github.com/auschanh"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/auschanh"><i class="fa-brands fa-lg fa-github"></i></a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="https://linkedin.com/in/auschanh"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/auschanh"><i class="fa-brands fa-lg fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="https://instagram.com/auschanh"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://instagram.com/auschanh"><i class="fa-brands fa-lg fa-square-instagram"></i></a>
                 </li>
             </ul>
         </div>
@@ -122,11 +122,11 @@
                         <!-- <p class="text-sm mt-2 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, ReactJS, Typescript, SQL</p> -->
                     </div> 
                 </div>
-                <p class="ml-3 text-sm mt-2 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, React, Typescript, SQL</p>
+                <p class="ml-3 text-sm mt-5 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, React, Typescript, SQL</p>
                 <div class="skills-icons ml-3 my-3 flex">
                     <img src="assets/sharepoint.svg" class="sm:h-20 h-12 mr-4">
                     <img src="assets/icons8-microsoft-power-automate-2020.svg" class="sm:h-20 h-12 mr-4">
-                    <img src="assets/react-seeklogo.svg" class="sm:h-20 h-12 mr-4">
+                    <img src="assets/react-3.png" class="sm:h-20 h-12 mr-4">
                     <img src="assets/typescript-official-svgrepo-com.svg" class="sm:h-20 h-12 mr-4">
                     <img src="assets/sql-file-format-svgrepo-com.svg" class="sm:h-20 h-12 mr-4">
                 </div> 
@@ -175,7 +175,7 @@
         <br>
 
         <div class="section education row-span-1 mt-10">
-            <h1>Education</h1><br>
+            <h1>Education</h1><br><br>
             <div class="section-desc flex">
                 <div class="tmu-logo">
                     <img src="assets/TMU-rgb.png" alt="TMU logo" class="h-20">
@@ -195,30 +195,36 @@
         <br>
         
         <div id="projects" class="section projects row-span-1">
-            <h1>Projects</h1><br>
+            <h1>Projects</h1><br><br>
             <div class="section-desc">
-                <!-- <ol>
-                    <ul>Book Review Website</ul>
-                    <ul>Honkai Star Rail Database Site</ul>
-                    <ul>BlackJack Terminal Game</ul>
-                </ol> -->
+
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="assets/bookreview.jpg" class="bookreview-pic" alt="Book Review Website" /></figure>
+                    <figure><img src="assets/bookreview.jpg"  alt="Book Review Website" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">
-                        Book Review Website
+                        <a class="hover:underline hover:decoration-2" target="_blank" rel="noopener noreferrer" href="https://bookreviews-app.fly.dev/">Book Review Website</a>
                         <div class="badge badge-primary">Website</div>
                       </h2>
                       <p>A website with a small catalogue of books to search from. Users can share a 
                         written review and rating of books after signing up.
                       </p>
-                      <div class="card-actions justify-end mt-3">
-                        <div class="badge badge-primary badge-outline">Python</div>
-                        <div class="badge badge-primary badge-outline">Flask</div>
-                        <div class="badge badge-info badge-outline">Postgres (SQL)</div>
-                        <div class="badge badge-secondary badge-outline">API</div>
-                        <div class="badge badge-error badge-outline">HTML</div> 
-                        <div class="badge badge-error badge-outline">CSS</div>
+                      <p>
+                        Includes implementing, searching, registering, logging in and out with a database and utilizing API calls. 
+                      </p>
+                      <div class="card-actions mt-3">
+                        <div>
+                            <div>
+                                <a href="https://github.com/auschanh/Book-Reviews" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="justify-end ml-auto">
+                            <div class="badge badge-primary badge-outline">Python</div>
+                            <div class="badge badge-primary badge-outline">Flask</div>
+                            <div class="badge badge-info badge-outline">Postgres (SQL)</div>
+                            <div class="badge badge-secondary badge-outline">API</div>
+                            <div class="badge badge-error badge-outline">HTML</div> 
+                            <div class="badge badge-error badge-outline">CSS</div>
+                        </div> 
                       </div>
                     </div>
                 </div>
@@ -229,17 +235,26 @@
                       <h2 class="card-title">
                         BlackJack Terminal Game
                       </h2>
-                      <p>A small game of Blackjack, fully playable in the terminal. Game consists of playing against the dealer,
-                        and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.
-                        </p>
-                        <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p>
-                        <p>Purpose of project was to learn more deeply understand Java, classes, enums, OOP fundamentals.</p>
-                        
-                      
-                      <div class="card-actions justify-end mt-3">
-                        <div class="badge badge-info badge-outline">Java</div>
-                        <div class="badge badge-ghost badge-outline">Terminal Game</div>
-                      </div>
+                        <div tabindex="0" class="collapse collapse-plus">
+                            <input type="checkbox" /> 
+                            <div class="collapse-title">
+                                A small game of Blackjack, fully playable in the terminal. Game consists of playing against the dealer,
+                                and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.
+                            </div>
+                            <div class="collapse-content">
+                                <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p>
+                                <p>Purpose of project was to learn more deeply understand Java, classes, enums, OOP fundamentals.</p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end mt-3">
+                            <div>
+                                <a href="https://github.com/auschanh/blackjack" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
+                            </div>
+                            <div class="justify-end ml-auto">
+                                <div class="badge badge-info badge-outline">Java</div>
+                                <div class="badge badge-ghost badge-outline">Terminal Game</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -248,18 +263,26 @@
                     <div class="card-body">
                       <h2 class="card-title">
                         Honkai Star Rail Database Site
-                        <div class="badge badge-secondary">Work In Progress</div>
+                        <div class="badge normal-view line-clamp-1 badge-secondary">Work In Progress</div>
+                        <div class="badge mobile-view badge-secondary">WIP</div>
                         <div class="badge badge-primary">Website</div>
                       </h2>
                       <p>A website containing data that includes: character, lightcone, ascension materials, and relic info for Honkai Star Rail game. 
                         </p>
-                      <div class="card-actions justify-end mt-3">
-                        <div class="badge badge-accent badge-outline">React</div>
-                        <div class="badge badge-primary badge-outline">Tailwind</div>
-                        <div class="badge badge-secondary badge-outline">API</div>
-                        <div class="badge badge-error badge-outline">HTML</div>
-                        <div class="badge badge-error badge-outline">CSS</div>
+                      <div class="card-actions mt-3">
+                        <div>
+                            <a href="https://github.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
+                        </div>
+                        <div class="justify-end ml-auto">
+                            <div class="badge badge-accent badge-outline">React</div>
+                            <div class="badge badge-primary badge-outline">Tailwind</div>
+                            <div class="badge badge-secondary badge-outline">API</div>
+                            <div class="badge badge-error badge-outline">HTML</div>
+                            <div class="badge badge-error badge-outline">CSS</div>
+                        </div>
+                        
                       </div>
+                      
                     </div>
                 </div>
 

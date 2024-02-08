@@ -1731,6 +1731,21 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 16rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 .flex {
   display: flex;
 }
@@ -1791,6 +1806,14 @@ details.collapse summary::-webkit-details-marker {
   align-items: center;
 }
 
+.justify-normal {
+  justify-content: normal;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1835,6 +1858,11 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-base-200 {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+}
+
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
 }
@@ -1861,6 +1889,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pl-0 {
   padding-left: 0px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -2018,6 +2050,20 @@ h2 {
   height: 23rem;
 }
 
+.mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .normal-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: inline-flex;
+  }
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -2029,6 +2075,10 @@ h2 {
 
 .hover\:decoration-pink-700:hover {
   text-decoration-color: #be185d;
+}
+
+.hover\:decoration-2:hover {
+  text-decoration-thickness: 2px;
 }
 
 .hover\:decoration-4:hover {

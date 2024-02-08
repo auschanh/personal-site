@@ -57,3 +57,16 @@ h2 {
 .blackjack-pic, .bookreview-pic {
   height: 23rem;
 }
+
+.mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .normal-view {
+    display: none;
+  }
+  .mobile-view {
+    display: inline-flex;
+  }
+}
