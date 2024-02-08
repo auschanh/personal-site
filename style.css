@@ -1867,6 +1867,18 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 0.95;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-px {
+  padding: 1px;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1889,6 +1901,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pl-0 {
   padding-left: 0px;
+}
+
+.pe-36 {
+  padding-inline-end: 9rem;
 }
 
 .text-left {
