@@ -42,8 +42,7 @@ h2 {
 }
 
 .section {
-  /* temporary centered content */
-  @apply lg:mx-36;
+  @apply lg:px-36;
 }
 
 .section-desc {
@@ -70,3 +69,4 @@ h2 {
     display: inline-flex;
   }
 }
+
