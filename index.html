@@ -13,10 +13,10 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>  
-    <nav class="z-10 bg-white bg-opacity-95 shadow-lg fixed top-0 flex w-full flex-wrap items-center justify-between py-2  focus:text-neutral-700 lg:py-4 lg:flex-wrap lg:justify-start">
+    <nav class="z-50 bg-white bg-opacity-95 shadow-lg fixed top-0 flex w-full flex-wrap items-center justify-between py-2  focus:text-neutral-700 lg:py-4 lg:flex-wrap lg:justify-start">
         <div class="container flex w-full flex-wrap items-center justify-between max-lg:px-20 px-40 my-0">
             
-            <button type="button" class="text-gray-900 ml-3 rounded-full bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"><i class="fa-regular fa-moon"></i>  Dark</button>
+            <button type="button" class="ml-3 rounded-full bg-black text-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"><i class="fa-regular fa-moon"></i>  Dark</button>
         <div class="middle-nav items-center justify-between text-xl font-bold">
             <ul class="list-style-none flex flex-col pl-0 lg:flex-row">
                 <li class="mb-4 lg:mb-0 lg:pr-2">
@@ -52,7 +52,7 @@
         </div>
     </nav>
     <div class="grid grid-flow-row justify-center max-md:max-w-full">
-        <div class="bg-slate-100 pt-64 py-10">
+        <div class="bg-slate-100 pt-64 py-10 w-screen">
             <div class="container hero flex flex-row font-mono place-items-center justify-center">
                 <div class= "hero-left picture basis-1/3 max-md:basis-full items-center justify-center">
                     <img src="assets/DSC00108 CROP.png" alt="'me">
@@ -89,9 +89,156 @@
                     </p>
                     
                     <br>
-                    <p>CAROUSEL OF INTERESTS HERE </p>
-                </div>
+
+                    <div
+                    id="carouselExampleCaptions"
+                    class="relative"
+                    data-te-carousel-init
+                    data-te-ride="carousel">
+                    <!--Carousel indicators-->
+                    <div
+                    class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-te-carousel-indicators>
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleCaptions"
+                        data-te-slide-to="0"
+                        data-te-carousel-active
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleCaptions"
+                        data-te-slide-to="1"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 2"></button>
+                    <button
+                        type="button"
+                        data-te-target="#carouselExampleCaptions"
+                        data-te-slide-to="2"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 3"></button>
+                    </div>
+
+                    <!--Carousel items-->
+                    <div
+                    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                    <!--First item-->
+                    <div
+                        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-active
+                        data-te-carousel-item
+                        style="backface-visibility: hidden">
+                        <img
+                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
+                        class="block w-full"
+                        alt="..." />
+                        <div
+                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                        <h5 class="text-xl">Photography</h5>
+                        <p class="text-sm">
+                            I'm still learning a lot about the photography world, but I hope to pick up a mirrorless camera soon.
+                        </p>
+                        <p class="text-sm">Click for photos I've taken</p>
+                        </div>
+                    </div>
+                    <!--Second item-->
+                    <div
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item
+                        style="backface-visibility: hidden">
+                        <img
+                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
+                        class="block w-full"
+                        alt="..." />
+                        <div
+                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                        <h5 class="text-xl">Gaming</h5>
+                        <p class="text-sm">
+                            I've been gaming since I could walk - my favourite genres include JRPGs and Souls-like games.
+                        </p>
+                        <p class="text-sm">Recent Favourites: Elden Ring, Dark Souls 3, Persona 5 Royal </p>
+                        </div>
+                    </div>
+                    <!--Third item-->
+                    <div
+                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item
+                        style="backface-visibility: hidden">
+                        <img
+                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
+                        class="block w-full"
+                        alt="..." />
+                        <div
+                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                        <h5 class="text-xl">Hockey</h5>
+                        <p class="text-sm">
+                            I don't play anymore but follow very closely with the NHL.
+                        </p>
+                        <p class="text-sm">
+                            I am a die hard Toronto Maple Leafs fan! I know I know.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!--Carousel controls - prev item-->
+                    <button
+                    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button"
+                    data-te-target="#carouselExampleCaptions"
+                    data-te-slide="prev">
+                    <span class="inline-block h-8 w-8">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                        >Previous</span
+                    >
+                    </button>
+                    <!--Carousel controls - next item-->
+                    <button
+                    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button"
+                    data-te-target="#carouselExampleCaptions"
+                    data-te-slide="next">
+                    <span class="inline-block h-8 w-8">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                        >Next</span
+                    >
+                    </button>
+                    </div>
+
+            </div>
+                    
         </div>
+    </div>
         
         <br>
         <br>
@@ -394,6 +541,9 @@
         </nav>
       </footer>
 <script src="https://web3forms.com/client/script.js" async defer></script>
+<script
+  type="text/javascript"
+  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
