@@ -12,270 +12,388 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<body>
+<body>  
     <nav class="z-10 bg-white bg-opacity-95 shadow-lg fixed top-0 flex w-full flex-wrap items-center justify-between py-2  focus:text-neutral-700 lg:py-4 lg:flex-wrap lg:justify-start">
-        <div class="flex w-full flex-wrap items-center justify-between px-3 my-0">
+        <div class="container flex w-full flex-wrap items-center justify-between max-lg:px-20 px-40 my-0">
             
             <button type="button" class="text-gray-900 ml-3 rounded-full bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"><i class="fa-regular fa-moon"></i>  Dark</button>
         <div class="middle-nav items-center justify-between text-xl font-bold">
             <ul class="list-style-none flex flex-col pl-0 lg:flex-row">
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="#about" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4">
+                    <a href="#about" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4 hover:text-gray-400">
                         About</a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="#work" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4">
+                    <a href="#work" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4 hover:text-gray-400">
                         Work</a>
                 </li>
                 <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="#projects" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4">
+                    <a href="#projects" class="hover:underline hover:decoration-pink-700 hover:decoration-4 hover:underline-offset-4 hover:text-gray-400">
                         Projects</a>
                 </li>
             </ul>
         </div>
-        <div class="right-nav items-center justify-between">
-            <ul class="list-style-none flex flex-col pl-0 lg:flex-row text-xl">
-                <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="assets/Resume2023.pdf"><i class="fa-solid fa-file"> RESUME</i></a>
-                </li>
-                <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="https://github.com/auschanh"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li class="mb-4 lg:mb-0 lg:pr-2">
-                    <a href="https://linkedin.com/in/auschanh"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/auschanh"><i class="fa-brands fa-square-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
-        </div>
-
-    </nav>
-
-    <div class="container grid grid-flow-row justify-center mt-64 max-md:max-w-full">
-        <div class="hero flex flex-row font-mono place-items-center justify-center">
-            <div class= "hero-left picture basis-1/3 max-md:basis-full items-center justify-center">
-                <img src="assets/DSC00108 CROP.png" alt="'me">
+            <div class="right-nav items-center justify-between">
+                <ul class="list-style-none flex flex-col pl-0 lg:flex-row text-xl">
+                    <li class="mb-4 lg:mb-0 lg:pr-2">
+                        <a href="assets/Resume2023.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file hover:text-gray-400"> <span class="font-sans text-sm">RESUME</span></i></a>
+                    </li>
+                    <li class="mb-4 lg:mb-0 lg:pr-2">
+                        <a href="https://github.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github hover:text-gray-400"></i></a>
+                    </li>
+                    <li class="mb-4 lg:mb-0 lg:pr-2">
+                        <a href="https://linkedin.com/in/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-linkedin hover:text-gray-400"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-square-instagram hover:text-gray-400"></i></a>
+                    </li>
+                </ul>
             </div>
-            <div class="hero-right desc mt-5 ml-5 basis-2/3 max-md:basis-full text-center flex justify-center items-center">
-                <div>
-                    <p class="text-5xl font-bold"> Hi, I'm Austin. </p><br>
-                    <p class="text-3xl"> I'm a software engineer based in Toronto, 
-                    with a passion for web development. </p>
+        </div>
+    </nav>
+    <div class="grid grid-flow-row justify-center max-md:max-w-full">
+        <div class="bg-slate-100 pt-64 py-10">
+            <div class="container hero flex flex-row font-mono place-items-center justify-center">
+                <div class= "hero-left picture basis-1/3 max-md:basis-full items-center justify-center">
+                    <img src="assets/DSC00108 CROP.png" alt="'me">
+                </div>
+                <div class="hero-right desc mt-5 ml-5 basis-2/3 max-md:basis-full text-center flex justify-center items-center">
+                    <div>
+                        <p class="text-5xl font-bold"> Hi, I'm Austin. </p><br>
+                        <p class="text-3xl"> I'm a software engineer based in Toronto, 
+                        with a passion for web development. </p>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <br>
         <br>
         <br>
-    
-        <div id="about" class="mt-10 section about row-span-1">
+        
+        <div id="about" class="container mt-10 section about row-span-1">
             <h1> About </h1><br>
             <div class="section-desc">
                 <p> Initially into a health related career path, I've always had an interest in programming
                     and building things in high school. Throughout my early university years, the problem solving and creativity of 
-                    Computer Science reignited a passion within me, leading me to where I am today. During my tenure at Toronto Metropolitan University, I was able to
-                    co-op for Ontario Public Service, where I showed my passion for breaking things down and engineering creative solutions. 
-                </p>
+                    <strong>Computer Science</strong> reignited a passion within me, making the career switch an easy choice. </p><br>
+                    <p>
+                        During my tenure at Toronto Metropolitan University, I was able to
+                    co-op for <strong>Ontario Public Service</strong>, where I showed my passion for breaking things down and engineering creative solutions.
+                    I was given opporunities for ownership over projects, such as working with a <strong>client to automate her business workflow</strong> and
+                    was selected to share this experience in a company wide learning and engagement conference.
+                    </p><br>
+                    <p>
+                        Currently, I'm always keeping up with what's trendy in tech. I love to continuously learn and grow my skillset
+                        as a developer and a person. Below are some things outside of tech that I'm interested in 🙂
+                    </p>
                     
                     <br>
                     <p>CAROUSEL OF INTERESTS HERE </p>
                 </div>
         </div>
+        
         <br>
         <br>
         <br>
-    
-        <div id="work" class="section work row-span-1 justify-items-center mt-10">
-            <h1>Work Experiences</h1><br><br>
-            <div class="section-desc">
-                <div tabindex="0" class="collapse collapse-arrow border border-base-300">
-                    <input type="checkbox" />
-                    <div class="collapse-title work-header flex">
-                        <div>
-                            <img src="assets/ops-logo.png" alt="Ontario Public Service Logo" class="w-16 md:w-10">
+        
+        <div class="bg-slate-100 work py-10">
+            <div id="work" class="container section row-span-1 justify-items-center mt-10">
+                <h1>Work Experiences</h1><br><br>
+                <div class="section-desc">
+                    <div tabindex="0" class="collapse collapse-arrow border-2 border-indigo-800">
+                        <input type="checkbox" />
+                        <div class="collapse-title work-header flex">
+                            <div>
+                                <img src="assets/ops-logo.png" alt="Ontario Public Service Logo" class="w-16 md:w-10">
+                            </div>
+                            <div class="ml-3">
+                                
+                                <p class="text-pink-700 font-extrabold text-sm">May 2021 - Aug 2022 (1yrs 4mos)</p>
+                                <p class="font-extrabold">Ontario Ministry of Children and Community Services | CYSSC</p>
+                                <p class="text-sm text-indigo-600 font-extrabold">PROGRAMMER</p>
+                            </div>
                         </div>
-                        <div class="ml-3">
+                        <div class="job1-desc collapse-content">
+                            <p class="text-teal-600 font-extrabold mt-3">Responsbilities</p>
+                            <ul class="job-desc text-base list-disc ml-3">
+                                
+                                <li class="my-2">Created and maintained <strong>SharePoint</strong> sites based on client tickets and requirements</li>
+                                <li class="my-2">Automated tasks with <strong>Power Automate</strong> to track files, populate lists/tables, email and notify clients</li>
+                                <li class="my-2">Utilized <strong>ReactJS</strong> and <strong>SharePoint Framework (SPFx)</strong> to uniquely customize and develop client <strong>SharePoint site</strong></li>
+                            </ul>
+                            <br>
+                            <div class="highlights mb-3">
+                                <p class="text-teal-600 font-extrabold font-xl mt-3">Highlights</p>
+                                <p class="text-base my-2"> ▶ <strong>Selected as a speaker for CYSSC Learning and Engagement Conference</strong> among multiple co-op students
+                                    - spoke about solo project on building a Sharepoint site and workflow for client, dramatically reducing time to populate, sort and filter data from applicants.
+                                </p>
+                                <p class="text-base"> ▶ Developed a workflow that <strong>automated ticket requests</strong> from clients onto team task list, removing manual insertion of data and significantly improving request to assigned ticket times. 
+                                    Workflow involved emailing clients, assigning priority and inserting into ticket list.
+                                </p>
+                            </div>
                             
-                            <p class="text-pink-700 font-extrabold text-sm">May 2021 - Aug 2022 (1yrs 4mos)</p>
-                            <p class="font-extrabold">Ontario Ministry of Children and Community Services | CYSSC</p>
-                            <p class="text-sm font-bold">PROGRAMMER</p>
-                        </div>
+                            <!-- <p class="text-sm mt-2 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, ReactJS, Typescript, SQL</p> -->
+                        </div> 
                     </div>
-                    <div class="job1-desc collapse-content">
-                        <p class="text-teal-700 font-extrabold">Responsbilities</p>
-                        <ul class="job-desc text-base list-disc ml-3">
-                            
-                            <li class="my-2">Created and maintained <strong>SharePoint</strong> sites based on client tickets and requirements</li>
-                            <li class="my-2">Automated tasks with <strong>Power Automate</strong> to track files, populate lists/tables, email and notify clients</li>
-                            <li class="my-2">Utilized <strong>ReactJS</strong> and <strong>SharePoint Framework (SPFx)</strong> to uniquely customize and develop client <strong>SharePoint site</strong></li>
-                        </ul>
-                        <br>
-                        <p class="text-teal-700 font-extrabold font-xl mt-3">Highlights</p>
-                        <p class="text-base my-2"> ▶ <strong>Selected as a speaker for CYSSC Learning and Engagement Conference</strong> among multiple co-op students
-                            - spoke about solo project on building a Sharepoint site and workflow for client, dramatically reducing time to populate, sort and filter data from applicants.
-                        </p>
-                        <p class="text-base"> ▶ Developed a workflow that <strong>automated ticket requests</strong> from clients onto team task list, removing manual insertion of data and significantly improving request to assigned ticket times. 
-                            Workflow involved emailing clients, assigning priority and inserting into ticket list.
-                        </p>
-                        <!-- <p class="text-sm mt-2 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, ReactJS, Typescript, SQL</p> -->
+                    <p class="ml-3 text-sm mt-5 font-bold"><span class="text-sm text-teal-600 font-extrabold">SKILLS: </span>SharePoint, Power Automate, React, Typescript, SQL</p>
+                    <div class="skills-icons ml-3 my-3 flex">
+                        <img src="assets/sharepoint.svg" class="sm:h-20 h-12 mr-4">
+                        <img src="assets/icons8-microsoft-power-automate-2020.svg" class="sm:h-20 h-12 mr-4">
+                        <img src="assets/react-3.png" class="sm:h-20 h-12 mr-4">
+                        <img src="assets/typescript-official-svgrepo-com.svg" class="sm:h-20 h-12 mr-4">
+                        <img src="assets/sql-file-format-svgrepo-com.svg" class="sm:h-20 h-12 mr-4">
                     </div> 
+                    
                 </div>
-                <p class="ml-3 text-sm mt-2 font-bold"><span class="text-sm text-teal-700 font-extrabold">SKILLS: </span>SharePoint, Power Automate, React, Typescript, SQL</p>
-                <div class="skills-icons ml-3 my-3 flex">
-                    <img src="assets/sharepoint.svg" class="sm:h-20 h-12 mr-4">
-                    <img src="assets/icons8-microsoft-power-automate-2020.svg" class="sm:h-20 h-12 mr-4">
-                    <img src="assets/react-seeklogo.svg" class="sm:h-20 h-12 mr-4">
-                    <img src="assets/typescript-official-svgrepo-com.svg" class="sm:h-20 h-12 mr-4">
-                    <img src="assets/sql-file-format-svgrepo-com.svg" class="sm:h-20 h-12 mr-4">
-                </div> 
-                
-            </div>
-                <br>
-                <div tabindex="0" class="collapse collapse-arrow border border-base-300">
-                    <input type="checkbox" /> 
-                    <div class="collapse-title text-xl font-bold" id="small-text">
-                        Other Experiences (Retail)
+                    <br>
+                    <div tabindex="0" class="collapse collapse-arrow border-2 border-indigo-800">
+                        <input type="checkbox" /> 
+                        <div class="collapse-title text-xl font-bold" id="small-text">
+                            Other Experiences (Retail)
+                        </div>
+                        <div class="collapse-content">
+                            <div class="starbucks">
+                                <p class="text-pink-700 font-extrabold text-sm">Oct 2023-Present</p>
+                                <p class="text-xl font-extrabold">Starbucks (Retail)</p>
+                                <p class="text-sm text-indigo-600 font-bold">BARISTA</p>
+                                <p>
+                                    Tasks include: daily cleaning of tools, carefully crafting customized drinks, restocking inventory.
+                                </p>
+                            </div>
+                            <br><br>
+                            <div class="longos">
+                                <p class="text-pink-700 font-extrabold text-sm">Jul 2016 - April 2021 (4yrs 8mos)</p>
+                                <p class="text-xl font-extrabold">Longos Corporation (Retail)</p>
+                                <p class="text-sm text-indigo-600 font-bold">DAIRY CLERK</p>
+                                <p class="job-desc text-base">
+                                    Daily tasks included: solo closing the department on closing days, stocking inventory and 
+                                    assisting customers. A lot of my interpersonal skills were developed here, such as <span class="font-bold">teamwork</span>, <span class="font-bold">initiative</span>, and <span class="font-bold">customer service</span>.
+                                </p>
+                            </div>
+                            <br><br>
+                            <div class="shoppers">
+                                <p class="text-pink-700 font-extrabold text-sm">Nov 2014 - Feb 2015</p>
+                                <p class="text-xl font-extrabold">Shoppers Drug Mart (Retail)</p>
+                                <p class="text-sm text-indigo-600 font-bold">Assistant Pharmacist and Cashier</p>
+                                <p>
+                                    Stocked inventory of medicines and drugs, filled customer prescriptions with precise instructions (weighing, removing, adding etc) and organized files.
+                                </p>
+                            </div>
+                           
+                        </div>
                     </div>
-                    <div class="collapse-content">
-                        <div class="starbucks">
-                            <p class="text-pink-700 font-extrabold text-sm">Oct 2023-Present</p>
-                            <p class="text-xl font-extrabold">Starbucks (Retail)</p>
-                            <p class="text-sm font-bold">BARISTA</p>
-                            <p>
-                                Tasks include: daily cleaning of tools, carefully crafting customized drinks, restocking inventory.
-                            </p>
-                        </div>
-                        <br><br>
-                        <div class="longos">
-                            <p class="text-pink-700 font-extrabold text-sm">Jul 2016 - April 2021 (4yrs 8mos)</p>
-                            <p class="text-xl font-extrabold">Longos Corporation (Retail)</p>
-                            <p class="text-sm font-bold">DAIRY CLERK</p>
-                            <p class="job-desc text-base">
-                                Daily tasks included: solo closing the department on closing days, stocking inventory and 
-                                assisting customers. A lot of my interpersonal skills were developed here, such as <span class="font-bold">teamwork</span>, <span class="font-bold">intiative</span>, and <span class="font-bold">customer service</span>.
-                            </p>
-                        </div>
-                        <br><br>
-                        <div class="shoppers">
-                            <p class="text-pink-700 font-extrabold text-sm">Nov 2014 - Feb 2015</p>
-                            <p class="text-xl font-extrabold">Shoppers Drug Mart (Retail)</p>
-                            <p class="text-sm font-bold">Assistant Pharmacist and Cashier</p>
-                            <p>
-                                Stocked inventory of medicines and drugs, filled customer prescriptions with precise instructions (weighing, removing, adding etc) and organized files.
-                            </p>
-                        </div>
-                       
-                    </div>
-                </div>
             </div>
-        <br>
-        <br>
-        <br>
 
-        <div class="section education row-span-1 mt-10">
-            <h1>Education</h1><br>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        
+        <div class="container section education row-span-1 my-10">
+            <h1>Education</h1><br><br>
             <div class="section-desc flex">
                 <div class="tmu-logo">
                     <img src="assets/TMU-rgb.png" alt="TMU logo" class="h-20">
                 </div>
                 <div class="ml-3 edu-desc">
                     <p class="text-pink-700 font-extrabold text-sm">Sept 2018 - Apr 2023</p>
-                    <span class="underline underline-offset-8 font-bold">Toronto Metropolitan University </span><span id="small-text">(formerly Ryerson University)</span> 
+                    <span class="font-bold">Toronto Metropolitan University </span><span id="small-text">(formerly Ryerson University)</span> 
                     <p>Bachelor of Computer Science Honours (Co-op)</p>
                     <p><span class="font-bold">GPA:</span> 3.48</p>
                 </div>
                 
             </div>
-            
         </div>
+        
         <br>
         <br>
         <br>
         
-        <div id="projects" class="section projects row-span-1">
-            <h1>Projects</h1><br>
-            <div class="section-desc">
-                <!-- <ol>
-                    <ul>Book Review Website</ul>
-                    <ul>Honkai Star Rail Database Site</ul>
-                    <ul>BlackJack Terminal Game</ul>
-                </ol> -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="assets/bookreview.jpg" class="bookreview-pic" alt="Book Review Website" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">
-                        Book Review Website
-                        <div class="badge badge-primary">Website</div>
-                      </h2>
-                      <p>A website with a small catalogue of books to search from. Users can share a 
-                        written review and rating of books after signing up.
-                      </p>
-                      <div class="card-actions justify-end mt-3">
-                        <div class="badge badge-primary badge-outline">Python</div>
-                        <div class="badge badge-primary badge-outline">Flask</div>
-                        <div class="badge badge-info badge-outline">Postgres (SQL)</div>
-                        <div class="badge badge-secondary badge-outline">API</div>
-                        <div class="badge badge-error badge-outline">HTML</div> 
-                        <div class="badge badge-error badge-outline">CSS</div>
-                      </div>
+        <div class="bg-slate-100 projects my-10 py-10 w-screen">
+            <div id="projects" class="container section row-span-1 mt-10">
+                <h1>Projects</h1><br><br>
+                <div class="section-desc">
+    
+                    <div class="card bg-base-100 shadow-xl">
+                        <figure><img src="assets/bookreview.jpg"  alt="Book Review Website" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            <a class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-400" target="_blank" rel="noopener noreferrer" href="https://bookreviews-app.fly.dev/">Book Review Website</a>
+                            <div class="badge badge-primary">Website</div>
+                          </h2>
+                          <p>A website with a small catalogue of books to search from. Users can share a 
+                            written review and rating of books after signing up.
+                          </p>
+                          <p>
+                            Includes implementing, searching, registering, logging in and out with a database and utilizing API calls. 
+                          </p>
+                          <div class="card-actions mt-3">
+                            <div>
+                                <div>
+                                    <a href="https://github.com/auschanh/Book-Reviews" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="justify-end ml-auto">
+                                <div class="badge badge-primary badge-outline">Python</div>
+                                <div class="badge badge-primary badge-outline">Flask</div>
+                                <div class="badge badge-info badge-outline">Postgres (SQL)</div>
+                                <div class="badge badge-secondary badge-outline">API</div>
+                                <div class="badge badge-error badge-outline">HTML</div> 
+                                <div class="badge badge-error badge-outline">CSS</div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+    
+                    <div class="card bg-base-100 shadow-xl mt-20">
+                        <figure><img src="assets/blackjack.png" class="blackjack-pic" alt="Terminal Blackjack" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            BlackJack Terminal Game
+                          </h2>
+                                <p>A small game of Blackjack, fully playable in the terminal. Game consists of playing against the dealer,
+                                    and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.</p>
+    
+                                <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p>
+                                <p>Purpose of project was to learn more deeply understand Java, classes, enums, OOP fundamentals.</p>
+                            <div class="card-actions justify-end mt-3">
+                                <div>
+                                    <a href="https://github.com/auschanh/blackjack" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
+                                </div>
+                                <div class="justify-end ml-auto">
+                                    <div class="badge badge-info badge-outline">Java</div>
+                                    <div class="badge badge-ghost badge-outline">Terminal Game</div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    
+    
+                    <div class="card bg-base-100 shadow-xl my-20">
+                        <figure><img src="assets/Honkai-Star-Rail-Black-Swan.jpg" alt="Terminal Blackjack" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">
+                            Honkai StarRail Database Site
+                            <div class="badge normal-view line-clamp-1 badge-secondary">Work In Progress</div>
+                            <div class="badge mobile-view badge-secondary">WIP</div>
+                            <div class="badge badge-primary">Website</div>
+                          </h2>
+                          <p>A website containing data that includes: character, lightcone, ascension materials, and relic info for Honkai Star Rail game. 
+                            </p>
+                          <div class="card-actions justify-end mt-3">
+                            <div>
+                                <a href="https://github.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
+                            </div>
+                            <div class="justify-end ml-auto">
+                                <div class="badge badge-accent badge-outline">React</div>
+                                <div class="badge badge-primary badge-outline">Tailwind</div>
+                                <div class="badge badge-secondary badge-outline">API</div>
+                                <div class="badge badge-error badge-outline">HTML</div>
+                                <div class="badge badge-error badge-outline">CSS</div>
+                            </div>
+                            
+                          </div>
+                          
+                        </div>
                     </div>
                 </div>
-
-                <div class="card bg-base-100 shadow-xl mt-10">
-                    <figure><img src="assets/blackjack.png" class="blackjack-pic" alt="Terminal Blackjack" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">
-                        BlackJack Terminal Game
-                      </h2>
-                      <p>A small game of Blackjack, fully playable in the terminal. Game consists of playing against the dealer,
-                        and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.
-                        </p>
-                        <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p>
-                        <p>Purpose of project was to learn more deeply understand Java, classes, enums, OOP fundamentals.</p>
-                        
-                      
-                      <div class="card-actions justify-end mt-3">
-                        <div class="badge badge-info badge-outline">Java</div>
-                        <div class="badge badge-ghost badge-outline">Terminal Game</div>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="card bg-base-100 shadow-xl mt-10">
-                    <figure><img src="assets/Honkai-Star-Rail-Black-Swan.jpg" alt="Terminal Blackjack" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">
-                        Honkai Star Rail Database Site
-                        <div class="badge badge-secondary">Work In Progress</div>
-                        <div class="badge badge-primary">Website</div>
-                      </h2>
-                      <p>A website containing data that includes: character, lightcone, ascension materials, and relic info for Honkai Star Rail game. 
-                        </p>
-                      <div class="card-actions justify-end mt-3">
-                        <div class="badge badge-accent badge-outline">React</div>
-                        <div class="badge badge-primary badge-outline">Tailwind</div>
-                        <div class="badge badge-secondary badge-outline">API</div>
-                        <div class="badge badge-error badge-outline">HTML</div>
-                        <div class="badge badge-error badge-outline">CSS</div>
-                      </div>
-                    </div>
-                </div>
-
             </div>
         </div>
 
-        <br>
-        <br>
-        <br>
-    
-        <footer>
-            This is my footer.
-        </footer>
+        <div class="contact container">
+            <div class="section text-center row-span-1">
+                <div class="text-4xl font-extrabold">Say Hi!</div><br>
+                <div class="text-xl text-gray-700">If you want to get in touch, email me at: <strong>auschanh@gmail.com</strong></div>
+                <div class="text-xl text-gray-700">Or leave me a message below.</div>
+                <form id="form" class="px-10 sm:px-20 xl:px-40 mt-20" action="https://api.web3forms.com/submit" method="POST">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class=" w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <input type="hidden" name="access_key" value="273d06f8-0428-4ffb-b266-df006b8250e2">
+                            <input type="hidden" name="redirect" value="localhost:5500">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="name">
+                                Your Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-indigo-100 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                id="name" name="name" type="text" placeholder="Your Name" required>
+                            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="email">
+                                Email Address
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-indigo-100 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="email" name="email" type="text" value="new submission" placeholder="LoganRoy@waystar.com" required>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" 
+                                for="subject">
+                                Subject
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-indigo-100 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="subject" name="subject" type="text" placeholder="Your Subject" required>
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="message">
+                                Your Message
+                            </label>
+                            <textarea rows="10" name="message"
+                                class="appearance-none block w-full bg-indigo-100 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required></textarea>
+                        </div>
+                        <div class="flex justify-between w-full px-3">
+                            <div class="md:flex md:items-center">
+                                <label class="block text-gray-500 font-bold">
+                                </label>
+                            </div>
+                            <button
+                                class="shadow bg-teal-600 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                                type="submit"
+                                id="btn-contact"
+                                >
+                                Send Message
+                            </button>
+                        </div>
+                        <div role="alert" id='msg' class="alert alert-success mt-3 text-center justify-self-end">
+                            <svg  xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <span class="font-bold">Message Sent. I'll get back to you as soon as possible 🙂</span>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+        
     </div>
-<!-- <script
-type="text/javascript"
-src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script> -->
+
+    <br>
+    <br>
+    <br>
+
+    <footer class="flex justify-between footer-center p-4 bg-black text-zinc-300 py-6">
+        <div></div>
+        <div class="items-center grid-flow-col">
+          <p class="text-3xl">Thanks for visiting!</p>
+          <p class="text-sm mt-2">Austin Chanhsvang © 2024 - All rights reserved</p>
+        </div> 
+        <nav class="grid-flow-col md:place-self-center md:justify-self-end md:mr-4">
+            <a href="https://github.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands mx-1 fa-2xl fa-github hover:text-gray-400"></i></a>
+            <a href="https://linkedin.com/in/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands mx-1 fa-2xl fa-linkedin hover:text-gray-400"></i></a>
+            <a href="https://instagram.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands mx-1 fa-2xl fa-square-instagram hover:text-gray-400"></i></a>
+        </nav>
+      </footer>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script src="index.js"></script>
 </body>
 </html>
