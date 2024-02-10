@@ -71,7 +71,7 @@
         <br>
         <br>
         
-        <div id="about" class="container mt-10 section about row-span-1">
+        <div id="about" class="max-sm:px-10 sm:container mt-10 section about row-span-1">
             <h1> About </h1><br>
             <div class="section-desc">
                 <p> Initially into a health related career path, I've always had an interest in programming
@@ -131,8 +131,8 @@
                         data-te-carousel-item
                         style="backface-visibility: hidden">
                         <img
-                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-                        class="block w-full"
+                        src="assets/hobbies/eldenring1.jpeg"
+                        class="block h-[300px] md:h-[600px]"
                         alt="..." />
                         <div
                         class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
@@ -149,8 +149,8 @@
                         data-te-carousel-item
                         style="backface-visibility: hidden">
                         <img
-                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-                        class="block w-full"
+                        src="assets/hobbies/eldenring2.jpeg"
+                        class="block h-[300px] md:h-[600px]"
                         alt="..." />
                         <div
                         class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
@@ -167,8 +167,8 @@
                         data-te-carousel-item
                         style="backface-visibility: hidden">
                         <img
-                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-                        class="block w-full"
+                        src="assets/hobbies/leafs.jpg"
+                        class="block h-[300px] md:h-[600px]"
                         alt="..." />
                         <div
                         class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
@@ -245,7 +245,7 @@
         <br>
         
         <div class="bg-slate-100 work py-10">
-            <div id="work" class="container section row-span-1 justify-items-center mt-10">
+            <div id="work" class="max-sm:px-10 sm:container section row-span-1 justify-items-center mt-10">
                 <h1>Work Experiences</h1><br><br>
                 <div class="section-desc">
                     <div tabindex="0" class="collapse collapse-arrow border-2 border-indigo-800">
@@ -338,11 +338,11 @@
         <br>
         <br>
         
-        <div class="container section education row-span-1 my-10">
+        <div class="max-sm:px-10 sm:container section education row-span-1 my-10">
             <h1>Education</h1><br><br>
             <div class="section-desc flex">
                 <div class="tmu-logo">
-                    <img src="assets/logos/TMU-rgb.png" alt="TMU logo" class="h-20">
+                    <img src="assets/logos/TMU-rgb.png" alt="TMU logo" class="sm:h-20">
                 </div>
                 <div class="ml-3 edu-desc">
                     <p class="text-pink-700 font-extrabold text-sm">Sept 2018 - Apr 2023</p>
@@ -359,7 +359,7 @@
         <br>
         
         <div class="bg-slate-100 projects my-10 py-10 w-screen">
-            <div id="projects" class="container section row-span-1 mt-10">
+            <div id="projects" class="max-sm:px-10 sm:container section row-span-1 mt-10">
                 <h1>Projects</h1><br><br>
                 <div class="section-desc">
     
@@ -370,12 +370,14 @@
                             <a class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-400" target="_blank" rel="noopener noreferrer" href="https://bookreviews-app.fly.dev/">Book Review Website</a>
                             <div class="badge badge-primary">Website</div>
                           </h2>
-                          <p>A website with a small catalogue of books to search from. Users can share a 
-                            written review and rating of books after signing up.
-                          </p>
-                          <p>
-                            Includes implementing, searching, registering, logging in and out with a database and utilizing API calls. 
-                          </p>
+                          <div class="max-sm:text-sm">
+                            <p>A website with a small catalogue of books to search from. Users can share a 
+                                written review and rating of books after signing up.
+                              </p>
+                              <p>
+                                Includes implementing, searching, registering, logging in and out with a database and utilizing API calls. 
+                              </p>
+                          </div>
                           <div class="card-actions mt-3">
                             <div>
                                 <div>
@@ -400,11 +402,14 @@
                           <h2 class="card-title">
                             BlackJack Terminal Game
                           </h2>
-                                <p>A small game of Blackjack, fully playable in the terminal. Game consists of playing against the dealer,
-                                    and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.</p>
-    
-                                <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p>
-                                <p>Purpose of project: better understand Java, classes, enums, OOP concepts.</p>
+                          <div class="max-sm:text-sm">
+                            <p>A small game of Blackjack, fully playable in the terminal. Game consists of playing against the dealer,
+                                and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.</p>
+
+                            <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p>
+                            <p>Purpose of project: better understand Java, classes, enums, OOP concepts.</p>
+                          </div>
+                               
                             <div class="card-actions justify-end mt-3">
                                 <div>
                                     <a href="https://github.com/auschanh/blackjack" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
@@ -428,8 +433,12 @@
                             <div class="badge mobile-view badge-secondary">WIP</div>
                             <div class="badge badge-primary">Website</div>
                           </h2>
-                          <p>A website containing data that includes: character, lightcone, ascension materials, and relic info for Honkai Star Rail game. 
+                          <div class="max-sm:text-sm">
+                            <p>
+                                A website containing data that includes: character, lightcone, ascension materials, and relic info for Honkai Star Rail game. 
                             </p>
+                          </div>
+                            
                           <div class="card-actions justify-end mt-3">
                             <div>
                                 <a href="https://github.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
@@ -450,7 +459,7 @@
             </div>
         </div>
 
-        <div class="contact container">
+        <div class="contact max-sm:px-10 sm:container">
             <div class="section text-center row-span-1">
                 <div class="text-4xl font-extrabold">Say Hi!</div><br>
                 <div class="text-xl text-gray-700">If you want to get in touch, email me at: <strong>auschanh@gmail.com</strong></div>
