@@ -1,3 +1,4 @@
+// contact form msg received 
 const btn = document.getElementById('btn-contact');
 const msg = document.getElementById('msg');
 
