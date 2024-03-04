@@ -13,6 +13,45 @@ nav.scrolled {
   @apply shadow-2xl;
   border-bottom: 0px;
 }
+#btn-more {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  #about-more {
+    display: none;
+  }
+  #btn-more {
+    display: block;
+  }
+}
+
+.icons {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 640px){
+  .icons {
+    font-size: 20px;
+  }
+  
+}
+
+
+/* Phone screens */
+@media screen and (max-width: 640px) {
+  .nav-div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .middle-nav {
+    display: none;
+  }
+  .right-nav {
+    display: flex;
+  }
+}
+
 
 h1 {
   @apply decoration-pink-700 underline decoration-4 underline-offset-8;
@@ -54,9 +93,17 @@ h2 {
   font-size: 1rem;
 }
 
-.blackjack-pic, .bookreview-pic {
+.blackjack-pic {
   height: 23rem;
 }
+
+@media screen and (max-width: 640px) {
+  .blackjack-pic {
+    height: 14rem;
+  }
+}
+
+
 
 .mobile-view {
   display: none;
@@ -68,6 +115,9 @@ h2 {
   }
   .mobile-view {
     display: inline-flex;
+  }
+  .more-desc {
+    display:none
   }
 }
 

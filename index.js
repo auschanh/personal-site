@@ -1,6 +1,49 @@
+//navbar burger
+document.addEventListener('DOMContentLoaded', function() {
+    // open
+    const burger = document.querySelectorAll('.navbar-burger');
+    const menu = document.querySelectorAll('.navbar-menu');
+
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    // close
+    const close = document.querySelectorAll('.navbar-close');
+    const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+});
+
+
 // contact form msg received 
 const btn = document.getElementById('btn-contact');
 const msg = document.getElementById('msg');
+const aboutMore = document.getElementById('about-more');
 
 document.getElementById('form').addEventListener('submit', e => {
     msg.style.display = 'grid';
@@ -10,3 +53,16 @@ document.getElementById('form').addEventListener('submit', e => {
 });
 
 
+// About Section Mobile
+let show = false;
+
+document.getElementById('btn-more').addEventListener('click', e => {
+    show = !show;
+    if (show == true){
+        aboutMore.style.display = 'block';
+    }
+    else if (show == false) {
+        aboutMore.style.display = 'none';
+    }
+    
+});
