@@ -104,6 +104,7 @@ h2 {
 }
 
 
+
 .mobile-view {
   display: none;
 }
@@ -114,6 +115,9 @@ h2 {
   }
   .mobile-view {
     display: inline-flex;
+  }
+  .more-desc {
+    display:none
   }
 }
 

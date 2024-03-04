@@ -205,7 +205,7 @@
                         alt="..." />
                         <div
                         class="absolute inset-x-[15%] bottom-5 py-5 text-center text-white md:block">
-                        <h5 class="text-xl"><span class="max-md:bg-black max-md:bg-opacity-80">Photography</span></h5>
+                        <h5 class="text-xl"><span class="bg-black max-md:bg-opacity-80">Photography</span></h5>
                         <p class="hidden md:block text-sm  px-20">
                             <span class="bg-black bg-opacity-80 px-3">I'm still learning a lot about the photography world, but I hope to pick up a mirrorless camera soon.</span>
                         </p>
@@ -585,9 +585,12 @@
                         
                         </figure>
                         <div class="card-body">
-                          <h2 class="card-title">
+                          <h2 class="card-title max-sm:flex-col items-baseline">
                             <a class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-400" target="_blank" rel="noopener noreferrer" href="https://bookreviews-app.fly.dev/">Book Review Website</a>
-                            <div class="badge badge-primary">Website</div>
+                            <div class="max-sm:flex-row max-sm:mr-auto flex">
+                                <div class="badge badge-primary">Website</div>
+                            </div>
+                            
                           </h2>
                           <div class="max-sm:text-sm">
                             <p>A website with a small catalogue of books to search from. Users can share a 
@@ -597,13 +600,13 @@
                                 Includes implementing, searching, registering, logging in and out with a database and utilizing API calls. 
                               </p>
                           </div>
-                          <div class="card-actions mt-3">
+                          <div class="card-actions max-sm:grid  max-sm:grid-flow-col max-sm:grid-col-2 justify-end mt-3">
                             <div>
-                                <div>
+                                <div class="max-sm:col-span-1">
                                     <a href="https://github.com/auschanh/Book-Reviews" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
                                 </div>
                             </div>
-                            <div class="justify-end ml-auto">
+                            <div class="justify-end ml-auto max-sm:col-span-1">
                                 <div class="badge badge-primary badge-outline">Python</div>
                                 <div class="badge badge-primary badge-outline">Flask</div>
                                 <div class="badge badge-info badge-outline">Postgres (SQL)</div>
@@ -622,10 +625,10 @@
                             BlackJack Terminal Game
                           </h2>
                           <div class="max-sm:text-sm">
-                            <p>A small game of Blackjack, fully playable in the terminal. Game consists of playing against the dealer,
+                            <p>A small game of Blackjack, fully playable in the terminal. <div class="more-desc">Game consists of playing against the dealer,
                                 and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.</p>
 
-                            <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p>
+                            <p>Challenges included counting for player busts, switching <strong>ace</strong> card values between 1 and 11.</p></div>
                             <p>Purpose of project: better understand Java, classes, enums, OOP concepts.</p>
                           </div>
                                
@@ -646,23 +649,29 @@
                     <div class="card bg-base-100 shadow-xl my-20">
                         <figure><img src="assets/projects/Honkai-Star-Rail-Black-Swan.jpg" alt="Terminal Blackjack" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">
-                            Honkai StarRail Database Site
-                            <div class="badge normal-view line-clamp-1 badge-secondary">Work In Progress</div>
-                            <div class="badge mobile-view badge-secondary">WIP</div>
-                            <div class="badge badge-primary">Website</div>
-                          </h2>
+                            
+                                <h2 class="card-title max-sm:flex-col">
+                                    Honkai StarRail Database Site
+                                    <div class="max-sm:flex-row max-sm:mr-auto flex">
+                                        <div class="badge normal-view line-clamp-1 badge-secondary mr-1">Work In Progress</div>
+                                        <div class="badge mobile-view badge-secondary mr-1">WIP</div>
+                                        <div class="badge badge-primary mr-1">Website</div>
+                                    </div>
+                                    
+                                  </h2>
+                            
+                          
                           <div class="max-sm:text-sm">
                             <p>
                                 A website containing data that includes: character, lightcone, ascension materials, and relic info for Honkai Star Rail game. 
                             </p>
                           </div>
                             
-                          <div class="card-actions justify-end mt-3">
-                            <div>
+                          <div class="card-actions max-sm:grid  max-sm:grid-flow-col max-sm:grid-col-2 justify-end mt-3">
+                            <div class="max-sm:col-span-1">
                                 <a href="https://github.com/auschanh" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-lg fa-github"></i></a>
                             </div>
-                            <div class="justify-end ml-auto">
+                            <div class="justify-end ml-auto max-sm:col-span-1">
                                 <div class="badge badge-accent badge-outline">React</div>
                                 <div class="badge badge-primary badge-outline">Tailwind</div>
                                 <div class="badge badge-secondary badge-outline">API</div>
