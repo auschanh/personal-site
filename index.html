@@ -18,7 +18,10 @@
         <div class="nav-div sm:container max-sm:max-w-full flex w-full flex-wrap items-center justify-between max-lg:px-0.5 px-40 my-0">
             <div class="flex">
                 <a href="index.html">
-                    <img src="assets/logos/ac-logo-black.png" class="h-12 ml-1 hover:bg-gray-400"/>
+                    <img src="assets/logos/ac-logo-black.png" class="h-12 ml-1 dark:hidden hover:bg-gray-400"/>
+                </a>
+                <a href="index.html">
+                    <img src="assets/logos/ac-logo-white.png" class="h-12 ml-1 hidden dark:block hover:bg-gray-400"/>
                 </a>
             <button type="button" class="rounded-full bg-black text-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"><i class="fa-regular fa-moon"></i>  Dark</button>
             </div>
@@ -42,7 +45,7 @@
             <div class="items-center justify-between">
                 <ul class="right-nav list-style-none flex pl-0 sm:flex-row text-xl">
                     <div>
-                        <button class="sm:hidden navbar-burger flex items-center font-extrabold p-3">
+                        <button class="sm:hidden dark:text-white navbar-burger flex items-center font-extrabold p-3">
                             <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <title>Mobile menu</title>
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -70,16 +73,17 @@
     </nav>
     <!--- Navbar Responsive -->
     <div class="navbar-menu relative z-50 hidden">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-		<nav class="fixed top-0 left-0 bottom-0 flex flex-col max-w-full py-6 px-6 bg-white border-r overflow-y-auto">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 dark:bg-white opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col max-w-full py-6 px-6 bg-white dark:bg-dark-navy dark:text-zinc-300 border-r overflow-y-auto">
 			<div class="flex items-center mb-8">
-				<a class="mr-auto text-3xl font-bold leading-none" href="#">
-					
+				<a class="mr-auto text-3xl font-bold leading-none dark:hidden" href="#">
                         <img src="assets/logos/ac-logo-black.png" class="h-12"/>
-			       
 				</a>
+                <a class="mr-auto text-3xl font-bold leading-none hidden dark:block" href="#">
+                    <img src="assets/logos/ac-logo-white.png" class="h-12"/>
+                </a>
 				<button class="navbar-close">
-					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<svg class="h-6 w-6 text-gray-400 dark:text-white cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
 					</svg>
 				</button>
@@ -124,7 +128,7 @@
                 </div>
                 <div class="hero-right desc mt-5 sm:ml-5 basis-2/3 max-md:basis-full text-center flex justify-center items-center">
                     <div>
-                        <p class="text-5xl dark:text-white font-bold"> Hi, <span class="text-teal-300">I'm Austin.</span> </p><br>
+                        <p class="text-5xl dark:text-white font-bold"> Hi, <span class="text-teal-700 dark:text-teal-300">I'm Austin.</span> </p><br>
                         <p class="text-3xl dark:text-neutral-400"> I'm a software engineer based in Toronto, 
                         with a passion for web development. </p>
                     </div>
@@ -142,7 +146,7 @@
                 <div class="max-sm:text-sm text-xl dark:text-zinc-300">
                     <p> Initially into a health related career path, I've always had an interest in programming
                     and building things in high school. Throughout my early university years, the problem solving and creativity of 
-                    <strong class="text-teal-500">Computer Science</strong> reignited a passion within me, making the career switch an easy choice. </p><br>
+                    <strong class="dark:text-teal-500">Computer Science</strong> reignited a passion within me, making the career switch an easy choice. </p><br>
                     <button
                         class="shadow bg-teal-600 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-3 rounded"
                         type="button"
@@ -151,9 +155,9 @@
                         University Journey
                     </button>
                     <p id="about-more" class="mt-2">
-                        During my tenure at <strong class="text-teal-500">Toronto Metropolitan University</strong>, I was able to
-                    co-op for <strong class="text-teal-500">Ontario Public Service</strong>, where I showed my passion for breaking things down and engineering creative solutions.
-                    I was given opportunities for ownership over projects, such as working with a <strong class="text-teal-500">client to automate her business workflow</strong> and
+                        During my tenure at <strong class="dark:text-teal-500">Toronto Metropolitan University</strong>, I was able to
+                    co-op for <strong class="dark:text-teal-500">Ontario Public Service</strong>, where I showed my passion for breaking things down and engineering creative solutions.
+                    I was given opportunities for ownership over projects, such as working with a <strong class="dark:text-teal-500">client to automate her business workflow</strong> and
                     was selected to share this experience in a company wide learning and engagement conference.
                     </p><br>
                     <p>
@@ -417,7 +421,7 @@
                         <p class="text-pink-700 font-extrabold max-sm:text-lg sm:text-sm">Sept 2018 - Apr 2023</p>
                         <span class="font-bold dark:text-zinc-300">Toronto Metropolitan University </span><span id="small-text" class="dark:text-neutral-400">(formerly Ryerson University)</span> 
                         <p class="dark:text-neutral-400">Bachelor of Computer Science Honours (Co-op)</p>
-                        <p class="text-teal-500"><span class="font-bold dark:text-zinc-300">GPA:</span> 3.48</p>
+                        <p class="dark:text-teal-500"><span class="font-bold dark:text-zinc-300">GPA:</span> 3.48</p>
                     </div>
                     
                 </div>
@@ -581,7 +585,7 @@
                             </div>
                         
                         </figure>
-                        <div class="dark:bg-navy card-body rounded-b-2xl">
+                        <div class="dark:bg-[#143260] card-body rounded-b-2xl">
                           <h2 class="card-title max-sm:flex-col items-baseline">
                             <a class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-400 dark:text-white" target="_blank" rel="noopener noreferrer" href="https://bookreviews-app.fly.dev/">Book Review Website</a>
                             <div class="max-sm:flex-row max-sm:mr-auto flex">
@@ -589,7 +593,7 @@
                             </div>
                             
                           </h2>
-                          <div class="max-sm:text-sm dark:text-zinc-300">
+                          <div class="max-sm:text-xs text-base font-mono dark:text-zinc-300">
                             <p>A website with a small catalogue of books to search from. Users can share a 
                                 written review and rating of books after signing up.
                               </p>
@@ -617,11 +621,11 @@
     
                     <div class="card bg-base-100 shadow-xl mt-20">
                         <figure><img src="assets/projects/blackjack.png" class="blackjack-pic" alt="Terminal Blackjack" /></figure>
-                        <div class="card-body rounded-b-2xl dark:bg-navy">
+                        <div class="card-body rounded-b-2xl dark:bg-[#143260]">
                           <h2 class="card-title dark:text-white">
                             BlackJack Terminal Game
                           </h2>
-                          <div class="max-sm:text-sm dark:text-zinc-300">
+                          <div class="max-sm:text-xs text-base font-mono dark:text-zinc-300">
                             <p>A small game of Blackjack, fully playable in the terminal. <div class="more-desc">Game consists of playing against the dealer,
                                 and keeps track of wins, losses and ties against dealer. Dealer class contains logic to hit or stand.</p>
 
@@ -684,7 +688,7 @@
 
                     <div class="card bg-base-100 shadow-xl my-20">
                         <figure><img src="assets/projects/just-one.jpg" alt="just one digital game" /></figure>
-                        <div class="dark:bg-navy card-body rounded-b-2xl">
+                        <div class="dark:bg-[#143260] card-body rounded-b-2xl">
                             
                                 <h2 class="card-title max-sm:flex-col items-baseline dark:text-white">
                                     Just One Online
@@ -697,7 +701,7 @@
                                   </h2>
                             
                           
-                          <div class="max-sm:text-sm dark:text-zinc-300">
+                          <div class="max-sm:text-xs text-base font-mono dark:text-zinc-300">
                             <p>
                                 An online version of the board game Just One. Includes sockets for game sessions, and basic NLP for game logic.
                             </p>
