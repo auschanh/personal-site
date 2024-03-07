@@ -8321,6 +8321,16 @@ h2 {
   background-color: rgb(255 255 255 / 0.1);
 }
 
+:is(.dark .dark\:hover\:bg-gray-400:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:hover\:bg-gray-600:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:hover\:fill-gray-100:hover) {
   fill: #f3f4f6;
 }
@@ -8328,6 +8338,15 @@ h2 {
 :is(.dark .dark\:hover\:text-\[\#3b71ca\]:hover) {
   --tw-text-opacity: 1;
   color: rgb(59 113 202 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:text-gray-600:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:decoration-rose-600:hover) {
+  text-decoration-color: #e11d48;
 }
 
 :is(.dark .dark\:hover\:shadow-\[0_8px_9px_-4px_rgba\(59\2c 113\2c 202\2c 0\.2\)\2c 0_4px_18px_0_rgba\(59\2c 113\2c 202\2c 0\.1\)\]:hover) {

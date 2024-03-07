@@ -67,6 +67,8 @@ document.getElementById("btn-more").addEventListener("click", (e) => {
 
 let darkMode;
 let root = document.getElementById("darkMode");
+
+// check if theme was set in local storage, and set root to that theme on page load
 if (localStorage.getItem("mode") !== null) {
   if (localStorage.getItem("mode") == "dark") {
     darkMode = true;
@@ -79,6 +81,7 @@ if (localStorage.getItem("mode") !== null) {
   }
 }
 
+// when theme button is clicked, toggle dark mode on or off
 document
   .getElementById("toggleDarkLightModeBtn")
   .addEventListener("click", (e) => {
