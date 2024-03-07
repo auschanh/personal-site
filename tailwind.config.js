@@ -14,4 +14,5 @@ module.exports = {
     },
   },
   plugins: [require("daisyui"), require("tw-elements/dist/plugin.cjs")],
+  darkMode: "class",
 };

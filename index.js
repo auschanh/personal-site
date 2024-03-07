@@ -1,68 +1,82 @@
 //navbar burger
-document.addEventListener('DOMContentLoaded', function() {
-    // open
-    const burger = document.querySelectorAll('.navbar-burger');
-    const menu = document.querySelectorAll('.navbar-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  // open
+  const burger = document.querySelectorAll(".navbar-burger");
+  const menu = document.querySelectorAll(".navbar-menu");
 
-    if (burger.length && menu.length) {
-        for (var i = 0; i < burger.length; i++) {
-            burger[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
+  if (burger.length && menu.length) {
+    for (var i = 0; i < burger.length; i++) {
+      burger[i].addEventListener("click", function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle("hidden");
         }
+      });
     }
+  }
 
-    // close
-    const close = document.querySelectorAll('.navbar-close');
-    const backdrop = document.querySelectorAll('.navbar-backdrop');
+  // close
+  const close = document.querySelectorAll(".navbar-close");
+  const backdrop = document.querySelectorAll(".navbar-backdrop");
 
-    if (close.length) {
-        for (var i = 0; i < close.length; i++) {
-            close[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
+  if (close.length) {
+    for (var i = 0; i < close.length; i++) {
+      close[i].addEventListener("click", function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle("hidden");
         }
+      });
     }
+  }
 
-    if (backdrop.length) {
-        for (var i = 0; i < backdrop.length; i++) {
-            backdrop[i].addEventListener('click', function() {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
+  if (backdrop.length) {
+    for (var i = 0; i < backdrop.length; i++) {
+      backdrop[i].addEventListener("click", function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle("hidden");
         }
+      });
     }
+  }
 });
 
+// contact form msg received
+const btn = document.getElementById("btn-contact");
+const msg = document.getElementById("msg");
+const aboutMore = document.getElementById("about-more");
 
-// contact form msg received 
-const btn = document.getElementById('btn-contact');
-const msg = document.getElementById('msg');
-const aboutMore = document.getElementById('about-more');
-
-document.getElementById('form').addEventListener('submit', e => {
-    msg.style.display = 'grid';
-    setTimeout(() => {
-        msg.style.display = 'none'
-    }, 5000);
+document.getElementById("form").addEventListener("submit", (e) => {
+  msg.style.display = "grid";
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 5000);
 });
-
 
 // About Section Mobile
 let show = false;
 
-document.getElementById('btn-more').addEventListener('click', e => {
-    show = !show;
-    if (show == true){
-        aboutMore.style.display = 'block';
-    }
-    else if (show == false) {
-        aboutMore.style.display = 'none';
-    }
-    
+document.getElementById("btn-more").addEventListener("click", (e) => {
+  show = !show;
+  if (show == true) {
+    aboutMore.style.display = "block";
+  } else if (show == false) {
+    aboutMore.style.display = "none";
+  }
 });
+
+// toggle light dark mode
+
+let darkMode = true;
+let root = document.getElementById("darkMode");
+
+document
+  .getElementById("toggleDarkLightModeBtn")
+  .addEventListener("click", (e) => {
+    darkMode = !darkMode;
+    if (darkMode == true) {
+      root.classList.remove("light");
+      root.classList.add("dark");
+    } else if (darkMode == false) {
+      root.classList.remove("dark");
+      root.classList.add("light");
+    }
+  });
