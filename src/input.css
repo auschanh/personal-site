@@ -4,9 +4,19 @@
 
 /* Custom CSS */
 
-
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 nav.scrolled {
@@ -30,13 +40,11 @@ nav.scrolled {
   font-size: 32px;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
   .icons {
     font-size: 20px;
   }
-  
 }
-
 
 /* Phone screens */
 @media screen and (max-width: 640px) {
@@ -52,22 +60,20 @@ nav.scrolled {
   }
 }
 
-
 h1 {
-  @apply decoration-pink-700 underline decoration-4 underline-offset-8;
+  @apply underline decoration-rose-600 decoration-4 underline-offset-8;
   @apply text-3xl font-bold;
-    /* font-size: 1.5rem;
+  /* font-size: 1.5rem;
     line-height: 2rem;
     font-weight: bold; */
-    
 }
 
 h2 {
   @apply text-xl;
 }
-  
+
 .hero {
-    grid-row-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -103,8 +109,6 @@ h2 {
   }
 }
 
-
-
 .mobile-view {
   display: none;
 }
@@ -117,7 +121,7 @@ h2 {
     display: inline-flex;
   }
   .more-desc {
-    display:none
+    display: none;
   }
 }
 
