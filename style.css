@@ -4280,6 +4280,10 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
+.h-\[716px\] {
+  height: 716px;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
@@ -4472,6 +4476,10 @@ details.collapse summary::-webkit-details-marker {
   width: 100vw;
 }
 
+.w-\[1248px\] {
+  width: 1248px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -4514,6 +4522,11 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-auto {
@@ -5509,6 +5522,16 @@ details.collapse summary::-webkit-details-marker {
   stroke: currentColor;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
 .\!p-0 {
   padding: 0px !important;
 }
@@ -6254,6 +6277,21 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(212 212 216 / var(--tw-text-opacity));
 }
 
+.text-navy {
+  --tw-text-opacity: 1;
+  color: rgb(11 28 54 / var(--tw-text-opacity));
+}
+
+.text-teal-300 {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
+.text-teal-500 {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -6373,6 +6411,16 @@ details.collapse summary::-webkit-details-marker {
 
 .blur {
   --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-50 {
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-75 {
+  --tw-brightness: brightness(.75);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -6496,6 +6544,10 @@ details.collapse summary::-webkit-details-marker {
 
 .duration-\[600ms\] {
   transition-duration: 600ms;
+}
+
+.duration-\[1100ms\] {
+  transition-duration: 1100ms;
 }
 
 .ease-\[cubic-bezier\(0\2c 0\2c 0\.15\2c 1\)\2c _cubic-bezier\(0\2c 0\2c 0\.15\2c 1\)\] {
@@ -7214,6 +7266,16 @@ h2 {
 .focus\:text-white:focus {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:text-gray-800:focus {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.focus\:text-teal-800:focus {
+  --tw-text-opacity: 1;
+  color: rgb(17 94 89 / var(--tw-text-opacity));
 }
 
 .focus\:no-underline:focus {
