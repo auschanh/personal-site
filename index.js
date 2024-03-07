@@ -65,8 +65,19 @@ document.getElementById("btn-more").addEventListener("click", (e) => {
 
 // toggle light dark mode
 
-let darkMode = true;
+let darkMode;
 let root = document.getElementById("darkMode");
+if (localStorage.getItem("mode") !== null) {
+  if (localStorage.getItem("mode") == "dark") {
+    darkMode = true;
+    root.classList.remove("light");
+    root.classList.add("dark");
+  } else {
+    darkMode = false;
+    root.classList.remove("dark");
+    root.classList.add("light");
+  }
+}
 
 document
   .getElementById("toggleDarkLightModeBtn")
@@ -75,8 +86,10 @@ document
     if (darkMode == true) {
       root.classList.remove("light");
       root.classList.add("dark");
+      localStorage.setItem("mode", "dark");
     } else if (darkMode == false) {
       root.classList.remove("dark");
       root.classList.add("light");
+      localStorage.setItem("mode", "light");
     }
   });
