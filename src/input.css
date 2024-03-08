@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 /* Custom CSS */
+* {
+  @apply transition-colors duration-200;
+}
 
 body {
   font-family:
