@@ -21,6 +21,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="import" href="navbar.html" />
+
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
@@ -862,6 +864,7 @@
                         src="assets/bookreviews-imgs/account-page2.gif"
                         class="block w-full"
                         alt="Login Page"
+                        data-dialog-target="project1item1"
                       />
                     </div>
                     <!--Second item-->
@@ -1480,7 +1483,24 @@
           ></a>
         </nav>
       </footer>
+      <!-- Modals for Carousels -->
+      <div
+        data-dialog-backdrop="project1item1"
+        data-dialog-backdrop-close="true"
+        class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
+      >
+        <div role="dialog" data-dialog="project1item1">
+          <div>
+            <img
+              alt="account page"
+              class="h-full w-full object-cover object-center"
+              src="assets/bookreviews-imgs/account-page2.gif"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script
       type="text/javascript"
