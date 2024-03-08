@@ -38,8 +38,13 @@
         <!-- Footer -->
         <?php include 'footer.html'?>
 
-        <!-- Modals for Carousels -->
+        <!-- Modals for Projects -->
         <?php include 'modalProjects.html'?>
+
+        <!-- Modals for Photos -->
+        <?php include 'modalPhotos.html'?>
+
+
     </div>
 </body>
 <script src="index.js"></script>

@@ -1,0 +1,194 @@
+<div
+  data-dialog-backdrop="photography"
+  data-dialog-backdrop-close="true"
+  class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
+>
+  <div role="dialog" data-dialog="photography">
+    <div>
+      <!-- <img
+        alt="Photography"
+        class="max-h-[90vh] max-w-[90vw] place-items-center content-center object-cover object-center align-middle"
+        src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      /> -->
+      <div
+        id="photographyCarousel"
+        class="data-te-interval=8000 pause=hover relative max-h-[90vh] max-w-[90vw] place-items-center content-center object-cover object-center align-middle"
+        data-te-carousel-init
+        data-te-ride="carousel"
+      >
+        <!--Carousel indicators-->
+        <div
+          class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+          data-te-carousel-indicators
+        >
+          <button
+            type="button"
+            data-te-target="#photographyCarousel"
+            data-te-slide-to="0"
+            data-te-carousel-active
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-te-target="#photographyCarousel"
+            data-te-slide-to="1"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-te-target="#photographyCarousel"
+            data-te-slide-to="2"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-te-target="#photographyCarousel"
+            data-te-slide-to="3"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-te-target="#photographyCarousel"
+            data-te-slide-to="4"
+            class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+
+        <!--Carousel items-->
+        <div
+          class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+        >
+          <!--First item-->
+          <div
+            class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item
+            data-te-carousel-active
+          >
+            <div
+              class="bg-white py-2 text-center text-xl dark:bg-navy dark:text-white"
+            >
+              Random Text
+            </div>
+            <img
+              src="assets/bookreviews-imgs/account-page2.gif"
+              class="block w-full"
+              alt="Login Page"
+            />
+          </div>
+          <!--Second item-->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item
+          >
+            <div
+              class="bg-white py-2 text-center text-xl dark:bg-navy dark:text-white"
+            >
+              Random Text 2
+            </div>
+            <img
+              src="assets/bookreviews-imgs/account-reviews.gif"
+              class="block w-full"
+              alt="Account Page"
+            />
+          </div>
+          <!--Third item-->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item
+          >
+            <img
+              src="assets/bookreviews-imgs/search-caption.gif"
+              class="block w-full"
+              alt="Search page"
+            />
+          </div>
+          <!--Fourth item-->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item
+          >
+            <img
+              src="assets/bookreviews-imgs/sorting-caption.gif"
+              class="block w-full"
+              alt="Sort Table Page"
+            />
+          </div>
+          <!--Fifth item-->
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item
+          >
+            <img
+              src="assets/bookreviews-imgs/review-caption.gif"
+              class="block w-full"
+              alt="Review Page"
+            />
+          </div>
+        </div>
+
+        <!--Carousel controls - prev item-->
+        <button
+          class="hover:gray-600 absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:text-gray-600 focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+          type="button"
+          data-te-target="#photographyCarousel"
+          data-te-slide="prev"
+        >
+          <span class="inline-block h-8 w-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </span>
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Previous</span
+          >
+        </button>
+        <!--Carousel controls - next item-->
+        <button
+          class="hover:gray-600 absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:no-underline hover:opacity-90 hover:outline-none focus:text-gray-600 focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+          type="button"
+          data-te-target="#photographyCarousel"
+          data-te-slide="next"
+        >
+          <span class="inline-block h-8 w-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Next</span
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
