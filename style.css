@@ -4284,12 +4284,28 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
+.h-3\/4 {
+  height: 75%;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
 
 .max-h-full {
   max-height: 100%;
+}
+
+.max-h-\[90\] {
+  max-height: 90;
+}
+
+.max-h-\[90\%\] {
+  max-height: 90%;
+}
+
+.max-h-\[90vh\] {
+  max-height: 90vh;
 }
 
 .min-h-\[1\.5rem\] {
@@ -4476,6 +4492,10 @@ details.collapse summary::-webkit-details-marker {
   width: 100vw;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -4518,6 +4538,14 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[90\] {
+  max-width: 90;
+}
+
+.max-w-\[90vw\] {
+  max-width: 90vw;
 }
 
 .flex-auto {
@@ -4941,6 +4969,10 @@ details.collapse summary::-webkit-details-marker {
 
 .place-items-center {
   place-items: center;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-end {
