@@ -88,28 +88,73 @@ const images = [
 
 function generateCarouselItems(image) {
   return `<div
-    class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-    data-te-carousel-item
-  >
-    <div class="rounded-lg bg-white py-2 text-center text-xl">
-      ${image.title}
-    </div>
-    <img
-      src="${image.path}"
-      alt="${image.alt}"
-      class="m-auto block h-[90vh] w-full"
-    />
-  </div>`;
+          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none photoItem"
+          data-te-carousel-item
+        >
+          <div class="rounded-lg bg-white py-2 text-center text-xl">
+            ${image.title}
+          </div>
+          <img
+            src="${image.path}"
+            alt="${image.alt}"
+            class="m-auto block h-[90vh] w-full"
+          />
+        </div>`;
 }
 
-function initCarouselPhotography() {
-  const carouselArea = document.getElementById("photographyCarouselItems"); // grab area where carousel items are
-  let carouselHTML = "";
+document.addEventListener("DOMContentLoaded", function () {
+  function initCarouselPhotography() {
+    const carouselArea = document.getElementById("photographyCarouselItems");
+    if (!carouselArea) {
+      console.error("Carousel area not found");
+      return;
+    }
 
-  images.forEach((image) => {
-    carouselHTML += generateCarouselItems(image); // generate HTML for carousel for each image
-  });
-  carouselArea.innerHTML = carouselHTML;
-}
+    let carouselHTML = "";
 
-window.addEventListener("load", initCarouselPhotography);
+    images.forEach((image, index) => {
+      carouselHTML += generateCarouselItems(image);
+    });
+
+    carouselArea.innerHTML = carouselHTML;
+
+    const carouselItems = document.querySelectorAll(".photoItem");
+    if (!carouselItems.length) {
+      console.error("No carousel items found");
+      return;
+    }
+
+    carouselItems[0].classList.add("data-te-carousel-active");
+
+    const prevButton = document.querySelector("#prevButton");
+    const nextButton = document.querySelector("#nextButton");
+    let currentIndex = 0;
+
+    prevButton.addEventListener("click", () => {
+      goToSlide(currentIndex - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+      goToSlide(currentIndex + 1);
+    });
+
+    function goToSlide(index) {
+      if (index < 0) {
+        index = carouselItems.length - 1; //wrapping around when carousel is at last image;
+      } else if (index >= carouselItems.length) {
+        index = 0;
+      }
+
+      currentIndex = index;
+
+      carouselItems.forEach((item, i) => {
+        if (i === currentIndex) {
+          item.classList.add("data-te-carousel-active");
+        } else {
+          item.classList.remove("data-te-carousel-active");
+        }
+      });
+    }
+  }
+  initCarouselPhotography();
+});
