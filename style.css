@@ -1433,11 +1433,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   }
 }
 
-.link {
-  cursor: pointer;
-  text-decoration-line: underline;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -1666,48 +1661,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   place-items: center;
   text-align: center;
   min-width: 4rem;
-}
-
-.swap {
-  position: relative;
-  display: inline-grid;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  place-content: center;
-  cursor: pointer;
-}
-
-.swap > * {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  transition-property: transform, opacity;
-}
-
-.swap input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.swap .swap-on,
-.swap .swap-indeterminate,
-.swap input:indeterminate ~ .swap-on {
-  opacity: 0;
-}
-
-.swap input:checked ~ .swap-off,
-.swap-active .swap-off,
-.swap input:indeterminate ~ .swap-off {
-  opacity: 0;
-}
-
-.swap input:checked ~ .swap-on,
-.swap-active .swap-on,
-.swap input:indeterminate ~ .swap-indeterminate {
-  opacity: 1;
 }
 
 .tabs-lifted:has(.tab-content[class^="rounded-"]) .tab:first-child:not(.tab-active),
@@ -2342,16 +2295,6 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-inline-start: -1px;
-}
-
-.link:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.link:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
 }
 
 .loading {
@@ -4057,16 +4000,12 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1.25rem;
 }
 
-.mt-\[0\.15rem\] {
-  margin-top: 0.15rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-\[0\.15rem\] {
+  margin-top: 0.15rem;
 }
 
 .box-border {
@@ -4272,6 +4211,10 @@ details.collapse summary::-webkit-details-marker {
   height: 72px;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .h-\[calc\(100\%-100px\)\] {
   height: calc(100% - 100px);
 }
@@ -4292,8 +4235,8 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
-.h-3\/4 {
-  height: 75%;
+.max-h-\[90vh\] {
+  max-height: 90vh;
 }
 
 .max-h-\[calc\(100\%-64px\)\] {
@@ -4302,18 +4245,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-\[90\] {
-  max-height: 90;
-}
-
-.max-h-\[90\%\] {
-  max-height: 90%;
-}
-
-.max-h-\[90vh\] {
-  max-height: 90vh;
 }
 
 .min-h-\[1\.5rem\] {
@@ -4500,10 +4431,6 @@ details.collapse summary::-webkit-details-marker {
   width: 100vw;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -4540,20 +4467,16 @@ details.collapse summary::-webkit-details-marker {
   max-width: 90%;
 }
 
+.max-w-\[90vw\] {
+  max-width: 90vw;
+}
+
 .max-w-\[calc\(100\%-1rem\)\] {
   max-width: calc(100% - 1rem);
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[90\] {
-  max-width: 90;
-}
-
-.max-w-\[90vw\] {
-  max-width: 90vw;
 }
 
 .flex-auto {

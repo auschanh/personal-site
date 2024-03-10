@@ -48,6 +48,7 @@
     </div>
 </body>
 <script src="index.js"></script>
+<script src="phtography.js"></script>
 <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
 <script src="https://web3forms.com/client/script.js" async defer></script>
 <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
