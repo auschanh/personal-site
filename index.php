@@ -18,37 +18,37 @@
 <body>
     <div id="darkMode" class="dark">
         <!-- Navbar  -->
-        <?php include 'navbar.html';?>
+        <?php include './sections/navbar.html';?>
 
         <!-- Intro and About section-->
-        <?php include 'about.html';?>
+        <?php include './sections/about.html';?>
 
         <!-- Work section -->
-        <?php include 'work.html'?>
+        <?php include './sections/work.html'?>
 
         <!-- Education -->
-        <?php include 'education.html'?>
+        <?php include './sections/education.html'?>
 
         <!-- Projects -->
-        <?php include 'projects.html'?>
+        <?php include './sections/projects.html'?>
 
         <!-- Contact -->
-        <?php include 'contact.html'?>
+        <?php include './sections/contact.html'?>
 
         <!-- Footer -->
-        <?php include 'footer.html'?>
+        <?php include './sections/footer.html'?>
 
         <!-- Modals for Projects -->
-        <?php include 'modalProjects.html'?>
+        <?php include './sections/modalProjects.html'?>
 
         <!-- Modals for Photos -->
-        <?php include 'modalPhotos.html'?>
+        <?php include './sections/modalPhotos.html'?>
 
 
     </div>
 </body>
 <script src="index.js"></script>
-<script src="phtography.js"></script>
+<script src="photography.js"></script>
 <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
 <script src="https://web3forms.com/client/script.js" async defer></script>
 <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>

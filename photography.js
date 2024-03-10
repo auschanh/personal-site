@@ -27,7 +27,7 @@ const images = [
   {
     path: "./assets/photography/20200102-DSC_0885.jpg",
     title: "Hiroshima, Japan 2020 - Miyajima Island",
-    alt: "View of small road with car in the town of Fujikawaguchiko",
+    alt: "View of Miyajima Island from boat",
   },
   {
     path: "./assets/photography/20200102-DSC_0937.jpg",
