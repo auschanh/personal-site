@@ -133,3 +133,11 @@ h2 {
   transition: all 1s ease;
   opacity: 1;
 }
+
+/* Ensure each carousel item takes full width */
+.carousel-item {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}

@@ -96,3 +96,16 @@ document
       localStorage.setItem("mode", "light");
     }
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the modal element
+  var modal = document.getElementById("photography-modal");
+
+  // When the modal is shown, set the carousel to show the first image
+  modal.addEventListener("shown.bs.modal", function () {
+    // Set the active slide to the first one
+    var carousel = document.getElementById("carousel");
+    carousel.setAttribute("data-bs-slide-to", "0");
+    carousel.querySelector(".carousel-item").classList.add("active");
+  });
+});
