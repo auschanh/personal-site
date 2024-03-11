@@ -5,26 +5,42 @@
   class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
   id="photography-modal"
 >
+  <div class="absolute right-0 top-0 mr-4 p-1 text-black dark:text-white">
+    1/17
+  </div>
   <!-- Actual modal here -->
   <div role="dialog" data-dialog="photography" class="relative mx-auto">
     <!-- Contents of Modal... which is a carousel -->
-    <div class="carousel h-[90vh] w-full overflow-hidden">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img
-          src="assets/photography/20191225-DSC_0005.jpg"
-          class="h-full items-center"
-        />
-        <div
-          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-        >
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+    <div class="carousel h-screen w-screen overflow-hidden">
+      <div id="slide1" class="carousel-item relative h-screen w-screen">
+        <div>
+          <div
+            class="flex justify-between rounded-t-lg bg-white pt-1 font-bold"
+          >
+            <div class="pl-2">
+              <div>Photo credit 📸: Justin Wong</div>
+            </div>
+
+            <div class="absolute inset-x-0 text-center">Tokyo, Japan</div>
+
+            <div class="pr-2">Edit: Me</div>
+          </div>
+          <img
+            src="assets/photography/20191225-DSC_0005.jpg"
+            class="aspect-auto max-h-[95vh] max-w-[90vw] object-contain"
+          />
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
         </div>
       </div>
-      <div id="slide2" class="carousel-item relative w-full">
+      <div id="slide2" class="carousel-item relative h-screen w-screen">
         <img
           src="assets/photography/20191227-DSC_0348.jpg"
-          class="h-full items-center"
+          class="aspect-auto max-h-screen max-w-[100vw] object-contain"
         />
         <div
           class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
@@ -33,10 +49,10 @@
           <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div id="slide3" class="carousel-item relative w-full">
+      <div id="slide3" class="carousel-item relative h-screen w-screen">
         <img
           src="assets/photography/20191231-DSC_0867.jpg"
-          class="h-full items-center"
+          class="aspect-auto max-h-screen max-w-[100vw] object-contain"
         />
         <div
           class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
@@ -45,10 +61,10 @@
           <a href="#slide4" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div id="slide4" class="carousel-item relative w-full">
+      <div id="slide4" class="carousel-item relative h-screen w-screen">
         <img
           src="assets/photography/20191229-DSC_0564.jpg"
-          class="h-full items-center"
+          class="aspect-auto max-h-screen max-w-[100vw] object-contain"
         />
         <div
           class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
