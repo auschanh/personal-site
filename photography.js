@@ -156,30 +156,23 @@ function generateCarouselItems(image, index) {
   </div>`;
 }
 
-// function getCarouselCounterNumber(index, photographyCounterArea) {
-//   let str = `${index + 1}/${images.length}`;
-//   if (photographyCounterArea) {
-//     photographyCounterArea.textContent = str;
-//   } else {
-//     console.error("Counter area element not found.");
-//   }
-// }
-
 document.addEventListener("DOMContentLoaded", function () {
   function initCarouselPhotography() {
     const carouselArea = document.getElementById("photographyCarousel");
-    // const photographyCounterArea = document.getElementById("photoCounter");
     let carouselHTML = "";
 
     images.forEach((image, index) => {
       carouselHTML += generateCarouselItems(image, index);
     });
-    // images.forEach((index) => {
-    //   getCarouselCounterNumber(index, photographyCounterArea);
-    // });
 
     carouselArea.innerHTML = carouselHTML;
   }
 
   initCarouselPhotography();
+});
+
+const closeModal = document.getElementById("closeModal");
+const modal = document.getElementById("photography-modal");
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
 });

@@ -109,3 +109,10 @@ document.addEventListener("DOMContentLoaded", function () {
     carousel.querySelector(".carousel-item").classList.add("active");
   });
 });
+
+const openPhotos = document.getElementById("openPhotographyModal");
+const modalP = document.getElementById("photography-modal");
+
+openPhotos.addEventListener("click", () => {
+  modalP.classList.remove("hidden");
+});

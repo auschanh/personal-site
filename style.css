@@ -1549,6 +1549,19 @@ input[type="range"]:active::-webkit-slider-thumb {
   overflow: hidden;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--navbar-padding, 0.5rem);
+  min-height: 4rem;
+  width: 100%;
+}
+
+:where(.navbar > *) {
+  display: inline-flex;
+  align-items: center;
+}
+
 .progress {
   position: relative;
   width: 100%;
@@ -3582,14 +3595,14 @@ details.collapse summary::-webkit-details-marker {
   inset: 0px;
 }
 
-.inset-x-\[15\%\] {
-  left: 15%;
-  right: 15%;
-}
-
 .inset-x-0 {
   left: 0px;
   right: 0px;
+}
+
+.inset-x-\[15\%\] {
+  left: 15%;
+  right: 15%;
 }
 
 .-bottom-\[47px\] {
@@ -3644,6 +3657,10 @@ details.collapse summary::-webkit-details-marker {
   left: 0.75rem;
 }
 
+.left-5 {
+  left: 1.25rem;
+}
+
 .left-\[50\%\] {
   left: 50%;
 }
@@ -3674,6 +3691,10 @@ details.collapse summary::-webkit-details-marker {
 
 .right-3 {
   right: 0.75rem;
+}
+
+.right-5 {
+  right: 1.25rem;
 }
 
 .right-9 {
@@ -3714,14 +3735,6 @@ details.collapse summary::-webkit-details-marker {
 
 .top-full {
   top: 100%;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
-.right-5 {
-  right: 1.25rem;
 }
 
 .\!z-40 {
@@ -4289,20 +4302,16 @@ details.collapse summary::-webkit-details-marker {
   max-height: 90vh;
 }
 
+.max-h-\[95vh\] {
+  max-height: 95vh;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-\[75vh\] {
-  max-height: 75vh;
-}
-
-.max-h-\[95vh\] {
-  max-height: 95vh;
 }
 
 .min-h-\[1\.5rem\] {
@@ -4489,6 +4498,18 @@ details.collapse summary::-webkit-details-marker {
   width: 100vw;
 }
 
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[70vw\] {
+  width: 70vw;
+}
+
+.w-\[80vw\] {
+  width: 80vw;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -4535,10 +4556,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[80vw\] {
-  max-width: 80vw;
 }
 
 .flex-auto {
@@ -5565,6 +5582,10 @@ details.collapse summary::-webkit-details-marker {
   padding: 0px;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -5593,8 +5614,8 @@ details.collapse summary::-webkit-details-marker {
   padding: auto;
 }
 
-.p-1 {
-  padding: 0.25rem;
+.p-0\.5 {
+  padding: 0.125rem;
 }
 
 .\!py-0 {
@@ -5838,6 +5859,10 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 24px;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -5860,14 +5885,6 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-\[6px\] {
   padding-top: 6px;
-}
-
-.pt-\[5\%\] {
-  padding-top: 5%;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
 }
 
 .text-left {
