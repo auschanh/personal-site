@@ -3644,10 +3644,6 @@ details.collapse summary::-webkit-details-marker {
   left: 0.75rem;
 }
 
-.left-5 {
-  left: 1.25rem;
-}
-
 .left-\[50\%\] {
   left: 50%;
 }
@@ -3678,10 +3674,6 @@ details.collapse summary::-webkit-details-marker {
 
 .right-3 {
   right: 0.75rem;
-}
-
-.right-5 {
-  right: 1.25rem;
 }
 
 .right-9 {
@@ -3724,12 +3716,12 @@ details.collapse summary::-webkit-details-marker {
   top: 100%;
 }
 
-.right-auto {
-  right: auto;
+.left-5 {
+  left: 1.25rem;
 }
 
-.left-auto {
-  left: auto;
+.right-5 {
+  right: 1.25rem;
 }
 
 .\!z-40 {
@@ -3844,10 +3836,6 @@ details.collapse summary::-webkit-details-marker {
   margin: auto;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .\!my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -3916,16 +3904,6 @@ details.collapse summary::-webkit-details-marker {
 .my-\[5px\] {
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.my-\[5\%\] {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.my-\[1\%\] {
-  margin-top: 1%;
-  margin-bottom: 1%;
 }
 
 .-ml-\[1\.5rem\] {
@@ -4287,10 +4265,6 @@ details.collapse summary::-webkit-details-marker {
   height: 72px;
 }
 
-.h-\[90vh\] {
-  height: 90vh;
-}
-
 .h-\[calc\(100\%-100px\)\] {
   height: calc(100% - 100px);
 }
@@ -4323,12 +4297,8 @@ details.collapse summary::-webkit-details-marker {
   max-height: 100%;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
-.max-h-\[80vh\] {
-  max-height: 80vh;
+.max-h-\[75vh\] {
+  max-height: 75vh;
 }
 
 .max-h-\[95vh\] {
@@ -4519,10 +4489,6 @@ details.collapse summary::-webkit-details-marker {
   width: 100vw;
 }
 
-.w-\[90vw\] {
-  width: 90vw;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -4571,16 +4537,8 @@ details.collapse summary::-webkit-details-marker {
   max-width: 100%;
 }
 
-.max-w-\[100\%\] {
-  max-width: 100%;
-}
-
 .max-w-\[80vw\] {
   max-width: 80vw;
-}
-
-.max-w-\[100vw\] {
-  max-width: 100vw;
 }
 
 .flex-auto {
@@ -4589,10 +4547,6 @@ details.collapse summary::-webkit-details-marker {
 
 .flex-initial {
   flex: 0 1 auto;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .shrink-0 {
@@ -4677,11 +4631,6 @@ details.collapse summary::-webkit-details-marker {
 
 .translate-y-\[6px\] {
   --tw-translate-y: 6px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-1\/2 {
-  --tw-translate-x: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -5216,16 +5165,6 @@ details.collapse summary::-webkit-details-marker {
   border-top-right-radius: 0.5rem;
 }
 
-.rounded-b-xl {
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
-}
-
-.rounded-t-xl {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-}
-
 .rounded-bl-none {
   border-bottom-left-radius: 0px;
 }
@@ -5583,10 +5522,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 0.95;
 }
 
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
-}
-
 .bg-none {
   background-image: none;
 }
@@ -5615,11 +5550,6 @@ details.collapse summary::-webkit-details-marker {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 .object-center {
@@ -5661,10 +5591,6 @@ details.collapse summary::-webkit-details-marker {
 
 .p-\[auto\] {
   padding: auto;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .p-1 {
@@ -5856,11 +5782,6 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 5px;
 }
 
-.py-\[5\%\] {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -5941,16 +5862,8 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 6px;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
-}
-
-.pt-0\.5 {
-  padding-top: 0.125rem;
+.pt-\[5\%\] {
+  padding-top: 5%;
 }
 
 .pt-1 {
@@ -5967,10 +5880,6 @@ details.collapse summary::-webkit-details-marker {
 
 .text-right {
   text-align: right;
-}
-
-.text-end {
-  text-align: end;
 }
 
 .-indent-\[999px\] {

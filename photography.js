@@ -156,19 +156,19 @@ function generateCarouselItems(image, index) {
   </div>`;
 }
 
-function getCarouselCounterNumber(index, photographyCounterArea) {
-  let str = `${index + 1}/${images.length}`;
-  if (photographyCounterArea) {
-    photographyCounterArea.textContext = str;
-  } else {
-    console.error("Counter area element not found.");
-  }
-}
+// function getCarouselCounterNumber(index, photographyCounterArea) {
+//   let str = `${index + 1}/${images.length}`;
+//   if (photographyCounterArea) {
+//     photographyCounterArea.textContent = str;
+//   } else {
+//     console.error("Counter area element not found.");
+//   }
+// }
 
 document.addEventListener("DOMContentLoaded", function () {
   function initCarouselPhotography() {
     const carouselArea = document.getElementById("photographyCarousel");
-    const photographyCounterArea = document.getElementById("photoCounter");
+    // const photographyCounterArea = document.getElementById("photoCounter");
     let carouselHTML = "";
 
     images.forEach((image, index) => {
