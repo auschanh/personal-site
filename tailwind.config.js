@@ -17,6 +17,30 @@ module.exports = {
       // padding: "2rem"
     },
   },
-  plugins: [require("daisyui"), require("tw-elements/dist/plugin.cjs")],
+  plugins: [
+    require("daisyui"),
+    require("tw-elements/dist/plugin.cjs"),
+    require("tailwind-typewriter")({
+      wordsets: {
+        firstName: { words: ["I'm Austin"], writeSpeed: 0.1 }, // 1s to type
+        lastName: {
+          words: ["CHANHSAVANG"],
+          writeSpeed: 0.1,
+          delay: 2,
+          repeat: 0,
+          eraseSpeed: 0,
+        }, // 1.1s
+        description: {
+          words: [
+            "I'm a software developer based in Toronto, with a passion for web development.",
+          ],
+          writeSpeed: 0.05,
+          repeat: 0,
+          eraseSpeed: 0,
+          delay: 2.5,
+        },
+      },
+    }),
+  ],
   darkMode: "class",
 };
