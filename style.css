@@ -3539,6 +3539,18 @@ details.collapse summary::-webkit-details-marker {
   bottom: var(--tooltip-tail-offset);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -3803,6 +3815,10 @@ details.collapse summary::-webkit-details-marker {
 
 .z-\[999\] {
   z-index: 999;
+}
+
+.z-\[998\] {
+  z-index: 998;
 }
 
 .order-1 {
@@ -4071,6 +4087,14 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.15rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -4104,6 +4128,10 @@ details.collapse summary::-webkit-details-marker {
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .table {
@@ -4510,6 +4538,10 @@ details.collapse summary::-webkit-details-marker {
   width: 80vw;
 }
 
+.w-\[100vw\] {
+  width: 100vw;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -4556,6 +4588,10 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[95vw\] {
+  max-width: 95vw;
 }
 
 .flex-auto {
@@ -5527,6 +5563,16 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
@@ -6007,6 +6053,11 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -6385,6 +6436,14 @@ details.collapse summary::-webkit-details-marker {
 
 .opacity-\[\.54\] {
   opacity: .54;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .shadow {
@@ -7158,6 +7217,11 @@ h2 {
   background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .hover\:fill-\[\#8b8b8b\]:hover {
   fill: #8b8b8b;
 }
@@ -7406,9 +7470,24 @@ h2 {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-inset:focus {
+  --tw-ring-inset: inset;
+}
+
 .focus\:ring-gray-200:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-indigo-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
 }
 
 .focus\:brightness-100:focus {
