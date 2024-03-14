@@ -128,7 +128,7 @@ function generateCarouselItems(image, index) {
   return `<div id="slide${slideNum}" class="carousel-item relative h-screen w-screen">
   <div
   id="photoCounter"
-  class="absolute right-0 top-0 mr-5 p-1 text-black dark:text-white font-bold dark:bg-gray-black text-lg"
+  class="absolute right-5 top-0  p-1 text-black dark:text-white font-bold dark:bg-gray-black text-lg"
 >${index + 1}/${images.length}</div>
   <div>
     <div
