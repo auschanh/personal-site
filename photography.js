@@ -107,8 +107,8 @@ function generateCarouselItems(image, index) {
   let leftText = "&nbsp;";
   let rightText = "&nbsp;";
   let slideNum = index + 1;
-  let nextSlideNum = "";
-  let prevSlide = "";
+  let nextSlideNum = slideNum === images.length ? 1 : slideNum + 1;
+  let prevSlide = slideNum === 1 ? images.length : slideNum - 1;
 
   if (image.misc !== "") {
     leftText = `📸 Credits: ${image.misc}`;
@@ -116,14 +116,6 @@ function generateCarouselItems(image, index) {
   if (leftText !== "&nbsp;") {
     rightText = "Edit: Me";
   }
-
-  if (slideNum === images.length) {
-    // if slide is last image
-    nextSlideNum = 1;
-  } else {
-    nextSlideNum = slideNum + 1;
-  }
-  prevSlide = slideNum - 1;
 
   return `<div id="slide${slideNum}" class="carousel-item relative h-screen w-screen">
   <div
