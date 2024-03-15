@@ -59,6 +59,13 @@ const images = [
     alt: "Japanese women in kimonos walking on street",
     misc: "",
   },
+
+  {
+    path: "./assets/photography/NightSkyJoshuaTree.png",
+    title: "Joshua Tree, California 2022",
+    alt: "Night Sky in Joshua Tree",
+    misc: "Justin Wong",
+  },
   {
     path: "./assets/photography/20220629-IMG_0166.jpg",
     title: "Joshua Tree, California 2022 - Keys View",
@@ -71,18 +78,18 @@ const images = [
     alt: "Girl posing by retro car at desert gas station",
     misc: "Justin Wong",
   },
-  {
-    path: "./assets/photography/20230903-IMG_1589.jpg",
-    title: "Manhattan, New York 2023 - Meatpacking District",
-    alt: "Architect creation at the MeatPacking District in NYC",
-    misc: "",
-  },
-  {
-    path: "./assets/photography/20230904-IMG_1627.jpg",
-    title: "New York 2023 - Liberty Island",
-    alt: "Statue of Liberty",
-    misc: "",
-  },
+  // {
+  //   path: "./assets/photography/20230903-IMG_1589.jpg",
+  //   title: "Manhattan, New York 2023 - Meatpacking District",
+  //   alt: "Architect creation at the MeatPacking District in NYC",
+  //   misc: "",
+  // },
+  // {
+  //   path: "./assets/photography/20230904-IMG_1627.jpg",
+  //   title: "New York 2023 - Liberty Island",
+  //   alt: "Statue of Liberty",
+  //   misc: "",
+  // },
   {
     path: "./assets/photography/20170601-IMG_1814.jpg",
     title: "Toronto, Ontario 2017 - Graffiti Alley",
@@ -95,12 +102,12 @@ const images = [
     alt: "Cherry Blossom Branches with sun in the background at High Park",
     misc: "",
   },
-  {
-    path: "./assets/photography/20230617-IMG_1419.jpg",
-    title: "Toronto, Ontario 2023 - Mimico Waterfront Park",
-    alt: "Mimico Waterfront condos",
-    misc: "",
-  },
+  // {
+  //   path: "./assets/photography/20230617-IMG_1419.jpg",
+  //   title: "Toronto, Ontario 2023 - Mimico Waterfront Park",
+  //   alt: "Mimico Waterfront condos",
+  //   misc: "",
+  // },
 ];
 
 function generateCarouselItems(image, index) {
