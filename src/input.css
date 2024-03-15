@@ -80,6 +80,18 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
+  #imageText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #imageText {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .hero {
     flex-wrap: wrap;
     display: flex;
