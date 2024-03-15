@@ -37,7 +37,7 @@ module.exports = {
           writeSpeed: 0.04,
           repeat: 0,
           eraseSpeed: 0,
-          delay: 3.5,
+          delay: 3,
         },
       },
     }),
