@@ -4,6 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Austin Chanhsavang - auschanh.com" />
+    <meta name="description"
+        content="Enter into the digital world of Austin Chanhsavang's personal site, where my software and web development journeys unfolds. Discover what captivates my interest, and learn of my adventures in the world." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="auschanh.com" />
+    <meta property="og:title" content="Austin Chanhsavang - auschanh.com" />
+    <meta property="og:description"
+        content="Enter into the digital world of Austin Chanhsavang's personal site, where my software and web development journeys unfolds. Discover what captivates my interest, and learn of my adventures in the world." />
+    <meta property="og:image" content="https://auschanh.com/assets/metaimage.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="auschanh.com" />
+    <meta property="twitter:title" content="Austin Chanhsavang - auschanh.com" />
+    <meta property="twitter:description"
+        content="Enter into the digital world of Austin Chanhsavang's personal site, where my software and web development journeys unfolds. Discover what captivates my interest, and learn of my adventures in the world." />
+    <meta property="twitter:image" content="https://auschanh.com/assets/metaimage.jpg" />
     <title>Austin Chanhsavang</title>
     <link rel="icon" type="images/x-icon" href="assets/logos/ac-logo-white.png" />
     <link rel="stylesheet" href="style.css" />

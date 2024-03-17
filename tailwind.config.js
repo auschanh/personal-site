@@ -25,10 +25,8 @@ module.exports = {
         firstName: { words: ["I'm Austin"], writeSpeed: 0.1 }, // 1s to type
         lastName: {
           words: ["CHANHSAVANG"],
-          writeSpeed: 0.05,
+          writeSpeed: 0.03,
           delay: 2,
-          repeat: 0,
-          eraseSpeed: 0,
         }, // 1.1s
         description: {
           words: [
