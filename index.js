@@ -49,6 +49,11 @@ document.getElementById("form").addEventListener("submit", (e) => {
   setTimeout(() => {
     msg.style.display = "none";
   }, 5000);
+  btn.disabled = true;
+  btn.style.cursor = "not-allowed";
+  btn.classList.add("cursor-not-allowed");
+  btn.classList.remove("hover:scale-110");
+  btn.classList.remove("hover:bg-teal-400");
 });
 
 // About Section Mobile
