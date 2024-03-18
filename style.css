@@ -6112,6 +6112,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(212 212 216 / var(--tw-text-opacity));
 }
 
+.text-teal-300 {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -9334,6 +9339,10 @@ btn:active:hover,
 
   .sm\:mt-14 {
     margin-top: 3.5rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .sm\:flex {
