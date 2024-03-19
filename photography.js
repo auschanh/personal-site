@@ -61,7 +61,7 @@ const images = [
   },
 
   {
-    path: "./assets/photography/NightSkyJoshuaTree.png",
+    path: "./assets/photography/NightSkyJoshuaTree.jpg",
     title: "Joshua Tree, California 2022",
     alt: "Night Sky in Joshua Tree",
     misc: "Justin Wong",
@@ -143,6 +143,7 @@ function generateCarouselItems(image, index) {
     </div>
     <img
       src="${image.path}"
+      loading="lazy"
       class="aspect-auto max-h-[95vh] max-w-[95vw] object-contain"
     />
     <div
